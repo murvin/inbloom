@@ -1,0 +1,23 @@
+Calendar :
+FR: Calendrier
+DE: Kalender
+IT: Calendario
+ES: Calendario
+
+Forum:
+FR:Forum
+DE:Forum
+IT:Foro
+ES:Foro
+
+Charts:
+FR:Graphiques
+DE:Charts
+IT:Grafici
+ES:Gráficos
+
+Settings:
+FR:Réglages
+DE:Einstellungen
+IT:Impostazioni
+ES:Configuración

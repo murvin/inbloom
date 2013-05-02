@@ -1,0 +1,8 @@
+MIDlet-1: InBloomMidlet,/icon.png,com.inbloom.InBloomMidlet
+MIDlet-Jar-Size: 524601
+MIDlet-Jar-URL: InBloom.jar
+MIDlet-Name: inBloom
+MIDlet-Vendor: Murvin Bhantooa
+MIDlet-Version: 1.1
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.1

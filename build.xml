@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="InBloom" default="jar" basedir=".">
+    <description>Builds, tests, and runs the project .</description>
+    <import file="nbproject/build-impl.xml"/>
+    <target name="pre-compile">
+        <ant antfile="./resources/build-res.xml" />
+        <ant antfile="./resources/${config.active}/build-res.xml" />
+    </target>
+</project>

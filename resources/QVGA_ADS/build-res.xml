@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Sample" default="task-build-res" basedir="../../">
+    <path id="classrefcpy">
+        <fileset dir="lib">
+            <include name="ResourceBuilder.jar" />
+            <include name="ResourceBuilderExt.jar" />
+        </fileset>
+    </path>
+
+    <target name="task-build-res">
+        <taskdef name="builder"
+                 classname="com.tricastmedia.resource.ResourceBuilderExt"
+                 classpathref="classrefcpy" />
+
+        <typedef name="locale"
+                 classname="com.tricastmedia.resource.LocaleElement"
+                 classpathref="classrefcpy" />
+
+        <builder basename="GraphicsResources"
+                 source="/Users/mbhantooa/Projects/J2ME/InBloom/src/com/inbloom/utils/"
+                 descriptor="/Users/mbhantooa/Projects/J2ME/InBloom/resources/QVGA_ADS/graphics.xml"
+                 destination="/Users/mbhantooa/Projects/J2ME/InBloom/graphics/"
+                 path="/Users/mbhantooa/Projects/J2ME/InBloom/resources/QVGA_ADS/"
+                  >
+                      
+                      
+        <locale name="common" />     
+        <locale name= "themeDefault" />
+        <locale name="themeAutumn" />
+        <locale name= "themeWinter" />
+        
+        </builder>
+    </target>
+    
+</project>
+

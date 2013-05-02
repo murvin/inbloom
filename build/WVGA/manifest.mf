@@ -1,0 +1,7 @@
+MIDlet-1: InBloomMidlet,/icon.png,com.inbloom.InBloomMidlet
+Nokia-MIDlet-App-Orientation: Portrait
+MIDlet-Vendor: Murvin Bhantooa
+MIDlet-Name: inBloom
+MIDlet-Version: 1.1
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

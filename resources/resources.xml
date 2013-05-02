@@ -1,0 +1,922 @@
+<?xml version="1.0"?>
+<!DOCTYPE resources SYSTEM "resources.dtd">
+<resources version="1.0">  
+    <set basename="GlobalResources">
+							
+        <resource id="1" type="string" name="LOCALE_ENGLISH">	
+            <value>English</value>						
+        </resource>
+        <resource id="2" type="string" name="LOCALE_SPANISH">	
+            <value>Español</value>						
+        </resource>
+        <resource id="3" type="string" name="LOCALE_GERMAN">	
+            <value>Deutsch</value>						
+        </resource>
+        <resource id="4" type="string" name="LOCALE_FRENCH">	
+            <value>Français</value>						
+        </resource>
+        <resource id="5" type="string" name="LOCALE_ITALIAN">	
+            <value>Italiano</value>						
+        </resource>
+        <resource id="6" type="string" name="GSM_LANG">		
+            <value locale="en-GB">en</value>	
+            <value locale="es-ES">es</value>	
+            <value locale="de-DE">de</value>	
+            <value locale="fr-FR">fr</value>	
+            <value locale="it-IT">it</value>	
+        </resource>
+        <resource id="7" type="string" name="TXT_APP_NAME">	
+            <value>inBloom</value>						
+        </resource>
+        <resource id="8" type="string" name="TXT_COMMON_BACK">		
+            <value locale="en-GB">Back</value>	
+            <value locale="es-ES">Volver</value>	
+            <value locale="de-DE">Zurück</value>	
+            <value locale="fr-FR">Retour</value>	
+            <value locale="it-IT">Indietro</value>	
+        </resource>
+        <resource id="9" type="string" name="TXT_COMMON_EXIT">		
+            <value locale="en-GB">Exit</value>	
+            <value locale="es-ES">Salir</value>	
+            <value locale="de-DE">Verlassen</value>	
+            <value locale="fr-FR">Quitter</value>	
+            <value locale="it-IT">Uscita</value>	
+        </resource>
+        <resource id="10" type="string" name="TXT_COMMON_OPTIONS">		
+            <value locale="en-GB">Options</value>	
+            <value locale="es-ES">Opciones</value>	
+            <value locale="de-DE">Optionen</value>	
+            <value locale="fr-FR">Options</value>	
+            <value locale="it-IT">Opzioni</value>	
+        </resource>
+        <resource id="11" type="string" name="TXT_COMMON_SELECT">		
+            <value locale="en-GB">Select</value>	
+            <value locale="es-ES">Seleccionar</value>	
+            <value locale="de-DE">Auswählen</value>	
+            <value locale="fr-FR">Sélectionner</value>	
+            <value locale="it-IT">Seleziona</value>	
+        </resource>
+        <resource id="12" type="string" name="TXT_COMMON_SAVE">		
+            <value locale="en-GB">Save</value>	
+            <value locale="es-ES">Guardar</value>	
+            <value locale="de-DE">Speichern</value>	
+            <value locale="fr-FR">Enregistrer</value>	
+            <value locale="it-IT">Salva</value>	
+        </resource>
+        <resource id="13" type="string" name="TXT_COMMON_YES">		
+            <value locale="en-GB">Yes</value>	
+            <value locale="es-ES">Sí</value>	
+            <value locale="de-DE">Ja</value>	
+            <value locale="fr-FR">Oui</value>	
+            <value locale="it-IT">Sì</value>	
+        </resource>
+        <resource id="14" type="string" name="TXT_COMMON_NO">		
+            <value locale="en-GB">No</value>	
+            <value locale="es-ES">No</value>	
+            <value locale="de-DE">Nein</value>	
+            <value locale="fr-FR">Non</value>	
+            <value locale="it-IT">No</value>	
+        </resource>
+        <resource id="15" type="string" name="TXT_COMMON_OK">		
+            <value locale="en-GB">OK</value>	
+            <value locale="es-ES">OK</value>	
+            <value locale="de-DE">OK</value>	
+            <value locale="fr-FR">OK</value>	
+            <value locale="it-IT">OK</value>	
+        </resource>
+        <resource id="16" type="string" name="TXT_COMMON_CANCEL">		
+            <value locale="en-GB">Cancel</value>	
+            <value locale="es-ES">Cancelar</value>	
+            <value locale="de-DE">Löschen</value>	
+            <value locale="fr-FR">Annuler</value>	
+            <value locale="it-IT">Annullare</value>	
+        </resource>
+        <resource id="17" type="string" name="TXT_COMMON_PLEASE_WAIT">		
+            <value locale="en-GB">Please Wait</value>	
+            <value locale="es-ES">Por favor, espere</value>	
+            <value locale="de-DE">Bitte warten</value>	
+            <value locale="fr-FR">Veuillez patienter</value>	
+            <value locale="it-IT">Attendere Prego</value>	
+        </resource>
+        <resource id="18" type="string" name="TXT_COMMON_GATHERING_INFO">		
+            <value locale="en-GB">Gathering information</value>	
+            <value locale="es-ES">Recopilando información</value>	
+            <value locale="de-DE">Informationen werden gesammelt</value>	
+            <value locale="fr-FR">Regrouper les informations</value>	
+            <value locale="it-IT">Ricerca dati in atto</value>	
+        </resource>
+        <resource id="19" type="string" name="TXT_COMMON_CLOSE">		
+            <value locale="en-GB">Close</value>	
+            <value locale="es-ES">Cerrar</value>	
+            <value locale="de-DE">Schließen</value>	
+            <value locale="fr-FR">Fermer</value>	
+            <value locale="it-IT">Chiudi</value>	
+        </resource>
+        <resource id="20" type="string" name="TXT_COMMON_HELP">		
+            <value locale="en-GB">Help</value>	
+            <value locale="es-ES">Ayuda</value>	
+            <value locale="de-DE">Hilfe</value>	
+            <value locale="fr-FR">Assitance</value>	
+            <value locale="it-IT">Aiuto</value>	
+        </resource>
+        <resource id="21" type="string" name="TXT_ENTER_PASSWORD">		
+            <value locale="en-GB">Please enter your password</value>	
+            <value locale="es-ES">Por favor, introduzca su contraseña</value>	
+            <value locale="de-DE">Bitte geben Sie Ihr Passwort ein.</value>	
+            <value locale="fr-FR">Veuillez entrer votre mot de passe</value>	
+            <value locale="it-IT">Inserisci la tua password</value>	
+        </resource>
+        <resource id="22" type="string" name="TXT_ENTER">		
+            <value locale="en-GB">Enter</value>	
+            <value locale="es-ES">Entrar</value>	
+            <value locale="de-DE">Eingeben</value>	
+            <value locale="fr-FR">Entrer</value>	
+            <value locale="it-IT">Entrare</value>	
+        </resource>
+        <resource id="23" type="string" name="TXT_JAN">		
+            <value locale="en-GB">January</value>	
+            <value locale="es-ES">Enero</value>	
+            <value locale="de-DE">Januar</value>	
+            <value locale="fr-FR">Janvier</value>	
+            <value locale="it-IT">Gennaio</value>	
+        </resource>
+        <resource id="24" type="string" name="TXT_FEB">		
+            <value locale="en-GB">February</value>	
+            <value locale="es-ES">Febrero</value>	
+            <value locale="de-DE">Februar</value>	
+            <value locale="fr-FR">Fevrier</value>	
+            <value locale="it-IT">Febbraio</value>	
+        </resource>
+        <resource id="25" type="string" name="TXT_MAR">		
+            <value locale="en-GB">March</value>	
+            <value locale="es-ES">Marzo</value>	
+            <value locale="de-DE">März</value>	
+            <value locale="fr-FR">Mars</value>	
+            <value locale="it-IT">Marzo</value>	
+        </resource>
+        <resource id="26" type="string" name="TXT_APR">		
+            <value locale="en-GB">April</value>	
+            <value locale="es-ES">Abril</value>	
+            <value locale="de-DE">April</value>	
+            <value locale="fr-FR">Avril</value>	
+            <value locale="it-IT">Aprile</value>	
+        </resource>
+        <resource id="27" type="string" name="TXT_MAY">		
+            <value locale="en-GB">May</value>	
+            <value locale="es-ES">Mayo</value>	
+            <value locale="de-DE">Mai</value>	
+            <value locale="fr-FR">Mai</value>	
+            <value locale="it-IT">Maggio</value>	
+        </resource>
+        <resource id="28" type="string" name="TXT_JUN">		
+            <value locale="en-GB">June</value>	
+            <value locale="es-ES">​​Junio</value>	
+            <value locale="de-DE">Juni</value>	
+            <value locale="fr-FR">Juin</value>	
+            <value locale="it-IT">Giugno</value>	
+        </resource>
+        <resource id="29" type="string" name="TXT_JULY">		
+            <value locale="en-GB">July</value>	
+            <value locale="es-ES">​​Julio</value>	
+            <value locale="de-DE">Juli</value>	
+            <value locale="fr-FR">Juillet</value>	
+            <value locale="it-IT">Luglio</value>	
+        </resource>
+        <resource id="30" type="string" name="TXT_AUG">		
+            <value locale="en-GB">August</value>	
+            <value locale="es-ES">Agosto</value>	
+            <value locale="de-DE">August</value>	
+            <value locale="fr-FR">Août</value>	
+            <value locale="it-IT">Agosto</value>	
+        </resource>
+        <resource id="31" type="string" name="TXT_SEP">		
+            <value locale="en-GB">September</value>	
+            <value locale="es-ES">Septiembre</value>	
+            <value locale="de-DE">September</value>	
+            <value locale="fr-FR">Septembre</value>	
+            <value locale="it-IT">Settembre</value>	
+        </resource>
+        <resource id="32" type="string" name="TXT_OCT">		
+            <value locale="en-GB">October</value>	
+            <value locale="es-ES">Octubre</value>	
+            <value locale="de-DE">Oktober</value>	
+            <value locale="fr-FR">Octobre</value>	
+            <value locale="it-IT">Ottobre</value>	
+        </resource>
+        <resource id="33" type="string" name="TXT_NOV">		
+            <value locale="en-GB">November</value>	
+            <value locale="es-ES">De noviembre</value>	
+            <value locale="de-DE">November</value>	
+            <value locale="fr-FR">Novembre</value>	
+            <value locale="it-IT">Novembre</value>	
+        </resource>
+        <resource id="34" type="string" name="TXT_DEC">		
+            <value locale="en-GB">December</value>	
+            <value locale="es-ES">Diciembre</value>	
+            <value locale="de-DE">Dezember</value>	
+            <value locale="fr-FR">Décembre</value>	
+            <value locale="it-IT">Dicembre</value>	
+        </resource>
+        <resource id="35" type="string" name="TXT_MON">		
+            <value locale="en-GB">Mon</value>	
+            <value locale="es-ES">Lun</value>	
+            <value locale="de-DE">Mon</value>	
+            <value locale="fr-FR">Lun</value>	
+            <value locale="it-IT">Lun</value>	
+        </resource>
+        <resource id="36" type="string" name="TXT_TUE">		
+            <value locale="en-GB">Tue</value>	
+            <value locale="es-ES">Mar</value>	
+            <value locale="de-DE">Die</value>	
+            <value locale="fr-FR">Mar</value>	
+            <value locale="it-IT">Mar</value>	
+        </resource>
+        <resource id="37" type="string" name="TXT_WED">		
+            <value locale="en-GB">Wed</value>	
+            <value locale="es-ES">Mié</value>	
+            <value locale="de-DE">Mit</value>	
+            <value locale="fr-FR">Mer</value>	
+            <value locale="it-IT">Mer</value>	
+        </resource>
+        <resource id="38" type="string" name="TXT_THURS">		
+            <value locale="en-GB">Thr</value>	
+            <value locale="es-ES">Jue</value>	
+            <value locale="de-DE">Don</value>	
+            <value locale="fr-FR">Jeu</value>	
+            <value locale="it-IT">Gio</value>	
+        </resource>
+        <resource id="39" type="string" name="TXT_FRI">		
+            <value locale="en-GB">Fri</value>	
+            <value locale="es-ES">Vie</value>	
+            <value locale="de-DE">Fre</value>	
+            <value locale="fr-FR">Ven</value>	
+            <value locale="it-IT">Ven</value>	
+        </resource>
+         <resource id="40" type="string" name="TXT_SAT">		
+            <value locale="en-GB">Sat</value>	
+            <value locale="es-ES">Sáb</value>	
+            <value locale="de-DE">Sam</value>	
+            <value locale="fr-FR">Sam</value>	
+            <value locale="it-IT">Sab</value>	
+        </resource>
+         <resource id="41" type="string" name="TXT_SUN">		
+            <value locale="en-GB">Sun</value>	
+            <value locale="es-ES">Dom</value>	
+            <value locale="de-DE">Son</value>	
+            <value locale="fr-FR">Dim</value>	
+            <value locale="it-IT">Dom</value>	
+        </resource>
+        <resource id="42" type="string" name="TXT_MAPKEY_MOSTFERTILE">		
+            <value locale="en-GB">Fertile</value>	
+            <value locale="es-ES">Fértiles</value>	
+            <value locale="de-DE">Fruchtbar</value>	
+            <value locale="fr-FR">Fertile</value>	
+            <value locale="it-IT">Fertili</value>	
+        </resource>
+        <resource id="43" type="string" name="TXT_MAPKEY_TODAY">		
+            <value locale="en-GB">Today</value>	
+            <value locale="es-ES">Hoy</value>	
+            <value locale="de-DE">Heute</value>	
+            <value locale="fr-FR">Aujourd'hui</value>	
+            <value locale="it-IT">Oggi</value>	
+        </resource>
+        <resource id="44" type="string" name="TXT_MAPKEY_OVULATION">		
+            <value locale="en-GB">Ovulation</value>	
+            <value locale="es-ES">Ovulación</value>	
+            <value locale="de-DE">Ovulation</value>	
+            <value locale="fr-FR">L'ovulation</value>	
+            <value locale="it-IT">Ovulazione</value>	
+        </resource>
+        <resource id="45" type="string" name="TXT_MAPKEY_PERIOD">		
+            <value locale="en-GB">Period</value>	
+            <value locale="es-ES">Período</value>	
+            <value locale="de-DE">Periode</value>	
+            <value locale="fr-FR">Période</value>	
+            <value locale="it-IT">Periodo</value>	
+        </resource>
+        <resource id="46" type="string" name="TXT_SETTINGS_YOURNAME">		
+            <value locale="en-GB">Your name</value>	
+            <value locale="es-ES">Su nombre</value>	
+            <value locale="de-DE">Ihr Name</value>	
+            <value locale="fr-FR">Votre nom</value>	
+            <value locale="it-IT">Il tuo nome</value>	
+        </resource>
+        <resource id="47" type="string" name="TXT_SETTINGS_YOURFORUMNAME">		
+            <value locale="en-GB">Your forum name</value>	
+            <value locale="es-ES">Foro de nombre</value>	
+            <value locale="de-DE">Ihr Name des Forums</value>	
+            <value locale="fr-FR">Votre nom du forum</value>	
+            <value locale="it-IT">Il tuo nome forum</value>	
+        </resource>
+        <resource id="48" type="string" name="TXT_SETTINGS_YOURFORUM_PASSWORD">		
+            <value locale="en-GB">Your forum password</value>	
+            <value locale="es-ES">Foro de contraseña</value>	
+            <value locale="de-DE">Ihr Forum Passwort</value>	
+            <value locale="fr-FR">Votre mot de passe du forum</value>	
+            <value locale="it-IT">Tuo forum la password</value>	
+        </resource>
+        <resource id="49" type="string" name="TXT_SETTINGS_CYCLE">		
+            <value locale="en-GB">Cycle</value>	
+            <value locale="es-ES">Ciclo</value>	
+            <value locale="de-DE">Zyklus</value>	
+            <value locale="fr-FR">Cycle</value>	
+            <value locale="it-IT">Ciclo</value>	
+        </resource>
+        <resource id="50" type="string" name="TXT_SETTINGS_UNITS">		
+            <value locale="en-GB">Units</value>	
+            <value locale="es-ES">Unidades</value>	
+            <value locale="de-DE">Einheiten</value>	
+            <value locale="fr-FR">Unités</value>	
+            <value locale="it-IT">Unità</value>	
+        </resource>
+        <resource id="51" type="string" name="TXT_SETTINGS_PERSONAL">		
+            <value locale="en-GB">Personal</value>	
+            <value locale="es-ES">Personal</value>	
+            <value locale="de-DE">Persönlich</value>	
+            <value locale="fr-FR">Personnels</value>	
+            <value locale="it-IT">Personale</value>	
+        </resource>
+        <resource id="53" type="string" name="TXT_SETTINGS_CYCLE_TITLE">		
+            <value locale="en-GB">Average cycle length</value>	
+            <value locale="es-ES">Duración media del ciclo</value>	
+            <value locale="de-DE">Durchschnittliche Zykluslänge</value>	
+            <value locale="fr-FR">Durée moyenne du cycle</value>	
+            <value locale="it-IT">Ciclo di lunghezza media</value>	
+        </resource>
+        <resource id="54" type="string" name="TXT_SETTINGS_CYCLE_DESC">		
+            <value locale="en-GB">The number of days your monthly cycle lasts.</value>	
+            <value locale="es-ES">El número de días de su ciclo menstrual dura.</value>	
+            <value locale="de-DE">Die Anzahl der Tage die Ihr monatlicher Zyklus dauert.</value>	
+            <value locale="fr-FR">Le nombre de jours que votre cycle menstruel dure.</value>	
+            <value locale="it-IT">Il numero di giorni dura il tuo ciclo mensile.</value>	
+        </resource>
+        <resource id="55" type="string" name="TXT_SETTINGS_PERIOD_TITLE">		
+            <value locale="en-GB">Average period length</value>	
+            <value locale="es-ES">La duración del período medio</value>	
+            <value locale="de-DE">Durchschnittliche Periodenlänge</value>	
+            <value locale="fr-FR">Durée moyenne de la période</value>	
+            <value locale="it-IT">Periodo di durata media</value>	
+        </resource>
+        <resource id="56" type="string" name="TXT_SETTINGS_PERIOD_DESC">		
+            <value locale="en-GB">Number of days your menstruation last.</value>	
+            <value locale="es-ES">Número de días de su última menstruación.</value>	
+            <value locale="de-DE">Anzahl der Tage die Ihre Menstruation andauert.</value>	
+            <value locale="fr-FR">Nombre de jours de votre dernière menstruation.</value>	
+            <value locale="it-IT">Numero di giorni l'ultima mestruazione.</value>
+        </resource>
+         <resource id="57" type="string" name="TXT_SETTINGS_LUTEAL_TITLE">		
+            <value locale="en-GB">Average luteal length</value>	
+            <value locale="es-ES">La longitud media lútea</value>	
+            <value locale="de-DE">Durchschnittliche Lutealphase</value>	
+            <value locale="fr-FR">Longueur moyenne lutéale</value>	
+            <value locale="it-IT">Lunghezza media luteale</value>	
+        </resource>
+        <resource id="58" type="string" name="TXT_SETTINGS_LUTEAL_DESC">		
+            <value locale="en-GB">Starts at ovulation and ends the day before your next period.</value>	
+            <value locale="es-ES">Comienza en la ovulación y termina el día antes de su próximo período.</value>	
+            <value locale="de-DE">Beginnt beim Eisprung und endet am Tag vor der nächsten Periode.</value>	
+            <value locale="fr-FR">Commence à l'ovulation et se termine le jour avant votre prochaine période.</value>	
+            <value locale="it-IT">Inizia l'ovulazione e termina il giorno prima del prossimo periodo.</value>	
+        </resource>
+        <resource id="59" type="string" name="TXT_SETTINGS_WEIGHT">		
+            <value locale="en-GB">Weight</value>	
+            <value locale="es-ES">Peso</value>	
+            <value locale="de-DE">Gewicht</value>	
+            <value locale="fr-FR">Poids</value>	
+            <value locale="it-IT">Peso</value>	
+        </resource>
+        <resource id="60" type="string" name="TXT_SETTINGS_WEIGHT_POUNDS">		
+            <value locale="en-GB">Pounds</value>	
+            <value locale="es-ES">Libra</value>	
+            <value locale="de-DE">Pfund</value>	
+            <value locale="fr-FR">Livres</value>	
+            <value locale="it-IT">Libra</value>	
+        </resource>
+        <resource id="61" type="string" name="TXT_SETTINGS_WEIGHT_KG">		
+            <value locale="en-GB">Kilograms</value>	
+            <value locale="es-ES">kilogramos</value>	
+            <value locale="de-DE">Kilogramm</value>	
+            <value locale="fr-FR">Kilogrammes</value>	
+            <value locale="it-IT">chilogrammi</value>	
+        </resource>
+        <resource id="62" type="string" name="TXT_SETTINGS_TEMP">		
+            <value locale="en-GB">Temperature</value>	
+            <value locale="es-ES">Temperatura</value>	
+            <value locale="de-DE">Temperatur</value>	
+            <value locale="fr-FR">Temperature</value>	
+            <value locale="it-IT">Temperatura</value>	
+        </resource>
+        <resource id="63" type="string" name="TXT_SETTINGS_TEMP_CELSIUS">		
+            <value locale="en-GB">Celsius</value>	
+            <value locale="es-ES">Celsius</value>	
+            <value locale="de-DE">Celsius</value>	
+            <value locale="fr-FR">Celsius</value>	
+            <value locale="it-IT">Celsius</value>	
+        </resource>
+        <resource id="64" type="string" name="TXT_SETTINGS_TEMP_FAH">		
+            <value locale="en-GB">Fahrenheit</value>	
+            <value locale="es-ES">Fahrenheit</value>	
+            <value locale="de-DE">Fahrenheit</value>	
+            <value locale="fr-FR">Fahrenheit</value>	
+            <value locale="it-IT">Fahrenheit</value>	
+        </resource>
+        <resource id="65" type="string" name="TXT_SETTINGS_YOURNAME_DESC">		
+            <value locale="en-GB">A chosen nickname that appears on the login screen.</value>	
+            <value locale="es-ES">Un apodo elegido que aparece en la pantalla de inicio de sesión.</value>	
+            <value locale="de-DE">Ein gewählter Spitzname, der auf dem Login-Bildschirm erscheint.</value>	
+            <value locale="fr-FR">Un pseudonyme choisi qui s'affiche sur l'écran de connexion.</value>	
+            <value locale="it-IT">Un soprannome scelto che appare sulla schermata di login.</value>	
+        </resource>
+        <resource id="66" type="string" name="TXT_SETTINGS_YOURPIN">		
+            <value locale="en-GB">Your pin</value>	
+            <value locale="es-ES">Su pin</value>	
+            <value locale="de-DE">Ihr Pin</value>	
+            <value locale="fr-FR">Votre pin</value>	
+            <value locale="it-IT">Il tuo pin</value>	
+        </resource>
+        <resource id="67" type="string" name="TXT_SETTINGS_YOURPIN_DESC">		
+            <value locale="en-GB">Default is 1234, please edit to make more secure.</value>	
+            <value locale="es-ES">Por defecto es 1234, por favor, edite para hacer más seguro.</value>	
+            <value locale="de-DE">Standard ist 1234, editieren Sie bitte, um sicherer zu machen.</value>	
+            <value locale="fr-FR">Par défaut est 1234, modifier pour plus de sécurité s'il vous plaît.</value>	
+            <value locale="it-IT">Di default è 1234, per favore edita per rendere più sicuro.</value>	
+        </resource>
+        <resource id="68" type="string" name="TXT_SETTINGS_YOURFORUMNAME_DESC">		
+            <value locale="en-GB">Register at www.in-bloom.co.uk/forum for a username.</value>	
+            <value locale="es-ES">Registrarse en www.in-bloom.co.uk/forum un nombre de usuario.</value>	
+            <value locale="de-DE">Registrieren Sie sich bei www.in-bloom.co.uk/forum für einen Benutzernamen.</value>	
+            <value locale="fr-FR">Inscrivez-vous à www.in-bloom.co.uk/forum un nom d'utilisateur.</value>	
+            <value locale="it-IT">Registrati a www.in-bloom.co.uk/forum un nome utente.</value>	
+        </resource>
+        <resource id="69" type="string" name="TXT_SETTINGS_YOURFORUM_PASSWORD_DESC">		
+            <value locale="en-GB">The password you used when registering.</value>	
+            <value locale="es-ES">La contraseña que utilizó al registrarse.</value>	
+            <value locale="de-DE">Das Passwort, das Sie bei der Registrierun benutzt haben.</value>	
+            <value locale="fr-FR">Le mot de passe que vous avez utilisée lors de votre inscription.</value>	
+            <value locale="it-IT">La password utilizzata durante la registrazione.</value>	
+        </resource>
+        <resource id="70" type="string" name="TXT_COMMON_ABOUT">		
+            <value locale="en-GB">About</value>	
+            <value locale="es-ES">Sobre</value>	
+            <value locale="de-DE">über</value>	
+            <value locale="fr-FR">À propos</value>	
+            <value locale="it-IT">À propos</value>	
+        </resource>
+        <resource id="71" type="string" name="TXT_ENTRY_EMOTIONAL">		
+            <value locale="en-GB">Emotional</value>	
+            <value locale="es-ES">Emocional</value>	
+            <value locale="de-DE">Emotional</value>	
+            <value locale="fr-FR">Emotionnels</value>	
+            <value locale="it-IT">Emotivo</value>	
+        </resource>
+        <resource id="72" type="string" name="TXT_ENTRY_PHYSIOLOGICAL">		
+            <value locale="en-GB">Physiological</value>	
+            <value locale="es-ES">Fisiológico</value>	
+            <value locale="de-DE">Physiologisch</value>	
+            <value locale="fr-FR">Physiologique</value>	
+            <value locale="it-IT">Fisiologico</value>	
+        </resource>
+        <resource id="73" type="string" name="TXT_ENTRY_NOTES">		
+            <value locale="en-GB">Notes</value>	
+            <value locale="es-ES">Notas</value>	
+            <value locale="de-DE">Hinweise</value>	
+            <value locale="fr-FR">Remarques</value>	
+            <value locale="it-IT">Note</value>	
+        </resource>
+        <resource id="74" type="string" name="TXT_ENTRY_MOOD">		
+            <value locale="en-GB">Mood</value>	
+            <value locale="es-ES">Humor</value>	
+            <value locale="de-DE">Stimmung</value>	
+            <value locale="fr-FR">Humeur</value>	
+            <value locale="it-IT">Stato d'animo</value>	
+        </resource>
+        <resource id="75" type="string" name="TXT_ENTRY_INTIMATE">		
+            <value locale="en-GB">Intimate</value>	
+            <value locale="es-ES">íntimo</value>	
+            <value locale="de-DE">Intim</value>	
+            <value locale="fr-FR">Intimes</value>	
+            <value locale="it-IT">Intimo</value>	
+        </resource>
+        <resource id="76" type="string" name="TXT_ENTRY_FLOW">		
+            <value locale="en-GB">Flow</value>	
+            <value locale="es-ES">Flujo</value>	
+            <value locale="de-DE">Fließen</value>	
+            <value locale="fr-FR">Flux</value>	
+            <value locale="it-IT">Flusso</value>	
+        </resource>
+        <resource id="77" type="string" name="TXT_ENTRY_SPOTTING">		
+            <value locale="en-GB">Spots</value>	
+            <value locale="es-ES">Spots</value>	
+            <value locale="de-DE">Spots</value>	
+            <value locale="fr-FR">Taches</value>	
+            <value locale="it-IT">Spots</value>	
+        </resource>
+        <resource id="78" type="string" name="TXT_ENTRY_SYMPTOMS">		
+            <value locale="en-GB">Symptoms</value>	
+            <value locale="es-ES">síntomas</value>	
+            <value locale="de-DE">Symptome</value>	
+            <value locale="fr-FR">Symptômes</value>	
+            <value locale="it-IT">Sintomi</value>	
+        </resource>
+        <resource id="79" type="string" name="TXT_SETTINGS_CORRECTION_REQUIRED">		
+            <value locale="en-GB">Correction required!</value>	
+            <value locale="es-ES">Corrección necesaria</value>	
+            <value locale="de-DE">Korrektur erforderlich</value>	
+            <value locale="fr-FR">Correction nécessaire</value>	
+            <value locale="it-IT">Correzione richiesta</value>	
+        </resource>
+        <resource id="80" type="string" name="TXT_SETTINGS_ISNOTVALID">		
+            <value locale="en-GB"> is not valid.</value>	
+            <value locale="es-ES"> no es válido.</value>	
+            <value locale="de-DE"> ungültig.</value>	
+            <value locale="fr-FR"> n'est pas valide.</value>	
+            <value locale="it-IT"> non è valido.</value>	
+        </resource>
+        <resource id="81" type="string" name="TXT_ENTEY_FLOW_NON">		
+            <value locale="en-GB">None</value>	
+            <value locale="es-ES">Ninguno</value>	
+            <value locale="de-DE">Keiner</value>	
+            <value locale="fr-FR">Aucune</value>	
+            <value locale="it-IT">Nessuno</value>	
+        </resource>
+        <resource id="82" type="string" name="TXT_ENTEY_FLOW_LOW">		
+            <value locale="en-GB">Low</value>	
+            <value locale="es-ES">Bajo</value>	
+            <value locale="de-DE">Niedrig</value>	
+            <value locale="fr-FR">Faible</value>	
+            <value locale="it-IT">Basso</value>	
+        </resource>
+        <resource id="83" type="string" name="TXT_ENTEY_FLOW_MED">		
+            <value locale="en-GB">Medium</value>	
+            <value locale="es-ES">Medio</value>	
+            <value locale="de-DE">Medium</value>	
+            <value locale="fr-FR">Moyens</value>	
+            <value locale="it-IT">Medio</value>	
+        </resource>
+        <resource id="84" type="string" name="TXT_ENTEY_FLOW_HIGH">		
+            <value locale="en-GB">High</value>	
+            <value locale="es-ES">Alto</value>	
+            <value locale="de-DE">Hoch</value>	
+            <value locale="fr-FR">Haut</value>	
+            <value locale="it-IT">Alto</value>	
+        </resource>
+        <resource id="86" type="string" name="TXT_ENTEY_MOOD_1">		
+            <value locale="en-GB">Sad</value>	
+            <value locale="es-ES">Triste</value>	
+            <value locale="de-DE">Traurig</value>	
+            <value locale="fr-FR">Triste</value>	
+            <value locale="it-IT">Triste</value>	
+        </resource>
+        <resource id="87" type="string" name="TXT_ENTEY_MOOD_2">		
+            <value locale="en-GB">Sick</value>	
+            <value locale="es-ES">Enfermos</value>	
+            <value locale="de-DE">Krank</value>	
+            <value locale="fr-FR">Malade</value>	
+            <value locale="it-IT">Malato</value>	
+        </resource>
+        <resource id="88" type="string" name="TXT_ENTEY_MOOD_3">		
+            <value locale="en-GB">Happy</value>	
+            <value locale="es-ES">Feliz</value>	
+            <value locale="de-DE">Glücklich</value>	
+            <value locale="fr-FR">Heureuse</value>	
+            <value locale="it-IT">Felice</value>	
+        </resource>
+        <resource id="89" type="string" name="TXT_ENTEY_MOOD_4">		
+            <value locale="en-GB">Excited</value>	
+            <value locale="es-ES">Emocionado</value>	
+            <value locale="de-DE">Aufgeregt</value>	
+            <value locale="fr-FR">Excitée</value>	
+            <value locale="it-IT">Emozionato</value>	
+        </resource>
+        <resource id="90" type="string" name="TXT_ENTEY_MOOD_5">		
+            <value locale="en-GB">In love</value>	
+            <value locale="es-ES">En amor</value>	
+            <value locale="de-DE">Verliebt</value>	
+            <value locale="fr-FR">Amoureuse</value>	
+            <value locale="it-IT">Innamorato</value>	
+        </resource>
+        <resource id="91" type="string" name="TXT_ENTEY_SYMPTOM_CRAMPS">		
+            <value locale="en-GB">Cramps</value>	
+            <value locale="es-ES">Calambres</value>	
+            <value locale="de-DE">Krämpfe</value>	
+            <value locale="fr-FR">Crampes</value>	
+            <value locale="it-IT">Spasmi</value>	
+        </resource>
+        <resource id="92" type="string" name="TXT_ENTEY_SYMPTOM_CRAVINGS">		
+            <value locale="en-GB">Cravings</value>	
+            <value locale="es-ES">Antojos</value>	
+            <value locale="de-DE">Heißhunger</value>	
+            <value locale="fr-FR">Envies</value>	
+            <value locale="it-IT">Desiderio</value>	
+        </resource>
+        <resource id="93" type="string" name="TXT_ENTEY_SYMPTOM_BLOATING">		
+            <value locale="en-GB">Bloating</value>	
+            <value locale="es-ES">Hinchazón</value>	
+            <value locale="de-DE">Blähungen</value>	
+            <value locale="fr-FR">Ballonnements</value>	
+            <value locale="it-IT">Gonfiore</value>	
+        </resource>
+        <resource id="94" type="string" name="TXT_ENTEY_SYMPTOM_ACNE">		
+            <value locale="en-GB">Acne</value>	
+            <value locale="es-ES">Acné</value>	
+            <value locale="de-DE">Akne</value>	
+            <value locale="fr-FR">L'acné</value>	
+            <value locale="it-IT">Acne</value>	
+        </resource>
+        <resource id="95" type="string" name="TXT_ENTEY_SYMPTOM_HEADCHE">		
+            <value locale="en-GB">Headache</value>	
+            <value locale="es-ES">Dolor de cabeza</value>	
+            <value locale="de-DE">Kopfschmerzen</value>	
+            <value locale="fr-FR">Maux de tête</value>	
+            <value locale="it-IT">Mal di testa</value>	
+        </resource>
+        <resource id="96" type="string" name="TXT_ENTEY_SYMPTOM_BACKACHE">		
+            <value locale="en-GB">Backache</value>	
+            <value locale="es-ES">Dolor de espalda</value>	
+            <value locale="de-DE">Rückenschmerzen</value>	
+            <value locale="fr-FR">Mal au dos</value>	
+            <value locale="it-IT">Mal di schiena</value>	
+        </resource>
+        <resource id="97" type="string" name="TXT_ENTRY_ISPERIOD_TODAY">		
+            <value locale="en-GB">Period starts today?</value>	
+            <value locale="es-ES">Su período comienza hoy?</value>	
+            <value locale="de-DE">Ihre Periode beginnt heute?</value>	
+            <value locale="fr-FR">Vos regles commence?</value>	
+            <value locale="it-IT">Il tuo periodo inizia?</value>	
+        </resource>
+        <resource id="98" type="string" name="TXT_DIALOG_EXIT_TITLE">		
+            <value locale="en-GB">Exit inBloom</value>	
+            <value locale="es-ES">Dejar inBloom</value>	
+            <value locale="de-DE">Verlassen inBloom</value>	
+            <value locale="fr-FR">Quitter inBloom</value>	
+            <value locale="it-IT">Lasciare inBloom</value>	
+        </resource>
+        <resource id="99" type="string" name="TXT_DIALOG_EXIT_DESC">		
+            <value locale="en-GB">Would you like to exit inBloom?</value>	
+            <value locale="es-ES">Quieres salir?</value>	
+            <value locale="de-DE">Möchten Sie inBloom beenden?</value>	
+            <value locale="fr-FR">Voulez-vous quitter inBloom?</value>	
+            <value locale="it-IT">Volete uscire?</value>	
+        </resource>
+        <resource id="100" type="string" name="TXT_SETTINGS">		
+            <value locale="en-GB">Settings</value>	
+            <value locale="es-ES">Ajustes</value>	
+            <value locale="de-DE">Einstellungen</value>	
+            <value locale="fr-FR">Paramètres</value>	
+            <value locale="it-IT">Impostazioni</value>	
+        </resource>
+        <resource id="101" type="string" name="TXT_SETTINGS_SAVED">		
+            <value locale="en-GB">Your settings have been updated.</value>	
+            <value locale="es-ES">Su configuración ha sido actualizada.</value>	
+            <value locale="de-DE">Ihre Einstellungen wurden aktualisiert.</value>	
+            <value locale="fr-FR">Vos paramètres ont été mis à jour.</value>	
+            <value locale="it-IT">Le impostazioni sono state aggiornate.</value>	
+        </resource>
+        <resource id="102" type="string" name="TXT_SETTINGS_LUTEAL_ERROR">		
+            <value locale="en-GB">Your luteal length should be shorter than your cycle.</value>	
+            <value locale="es-ES">Su longitud lútea debe ser más corto que el ciclo.</value>	
+            <value locale="de-DE">Ihre Lutealphase sollte kürzer sein als Ihr Zyklus.</value>	
+            <value locale="fr-FR">Votre longueur lutéale doit être plus courte que votre cycle.</value>	
+            <value locale="it-IT">La lunghezza luteale dovrebbe essere più breve del tuo ciclo.</value>	
+        </resource>
+         <resource id="103" type="string" name="TXT_SETTINGS_PERIOD_ERROR">		
+            <value locale="en-GB">Your period length should be shorter than your cycle.</value>	
+            <value locale="es-ES">Su longitud período debe ser más corto que el ciclo.</value>	
+            <value locale="de-DE">Ihre Periodenlänge sollte kürzer sein als Ihr Zyklus.</value>	
+            <value locale="fr-FR">Votre longueur periode doit être plus courte que votre cycle.</value>	
+            <value locale="it-IT">La lunghezza periodo dovrebbe essere più breve del tuo ciclo.</value>	
+        </resource>
+        <resource id="104" type="string" name="TXT_SETTINGS_LANGUAGE">		
+            <value locale="en-GB">Language</value>	
+            <value locale="es-ES">Lengua</value>	
+            <value locale="de-DE">Sprache</value>	
+            <value locale="fr-FR">Langue</value>	
+            <value locale="it-IT">Lingua</value>	
+        </resource>
+        <resource id="105" type="string" name="TXT_THEME">		
+            <value locale="en-GB">Theme</value>	
+            <value locale="es-ES">Tema</value>	
+            <value locale="de-DE">Thema</value>	
+            <value locale="fr-FR">Thème</value>	
+            <value locale="it-IT">Tema</value>	
+        </resource>
+        <resource id="106" type="string" name="TXT_AUTUMN">		
+            <value locale="en-GB">Autumn</value>	
+            <value locale="es-ES">Otoño</value>	
+            <value locale="de-DE">Herbst</value>	
+            <value locale="fr-FR">Automne</value>	
+            <value locale="it-IT">Autunno</value>	
+        </resource>
+        <resource id="107" type="string" name="TXT_WINTER">		
+            <value locale="en-GB">Winter</value>	
+            <value locale="es-ES">Invierno</value>	
+            <value locale="de-DE">Winter</value>	
+            <value locale="fr-FR">Hiver</value>	
+            <value locale="it-IT">Inverno</value>	
+        </resource>
+        <resource id="108" type="string" name="TXT_DEFAULT">		
+            <value locale="en-GB">Default</value>	
+            <value locale="es-ES">Defecto</value>	
+            <value locale="de-DE">Standard</value>	
+            <value locale="fr-FR">Par défaut</value>	
+            <value locale="it-IT">Difetto</value>	
+        </resource>
+        <resource id="109" type="string" name="TXT_PRESS_ENTER">		
+            <value locale="en-GB">Just press enter.</value>	
+            <value locale="es-ES">Sólo tiene que pulsar enter.</value>	
+            <value locale="de-DE">Drücken Sie einfach eingeben.</value>	
+            <value locale="fr-FR">Il suffit d'appuyer sur entrer.</value>	
+            <value locale="it-IT">Basta premere invio.</value>	
+        </resource>
+        <resource id="110" type="string" name="TXT_ERROR_INVALID_PASSWORD">		
+            <value locale="en-GB">Wrong password.</value>	
+            <value locale="es-ES">Contraseña incorrecta.</value>	
+            <value locale="de-DE">Falsches Passwort.</value>	
+            <value locale="fr-FR">Mauvais mot de passe.</value>	
+            <value locale="it-IT">Password errata.</value>	
+        </resource>
+        <resource id="111" type="string" name="TXT_MENU_ACCEPT">		
+            <value locale="en-GB">Accept</value>	
+            <value locale="es-ES">Aceptar</value>	
+            <value locale="de-DE">Akzeptieren</value>	
+            <value locale="fr-FR">Accepter</value>	
+            <value locale="it-IT">Accettare</value>	
+        </resource>
+        <resource id="112" type="string" name="TXT_MENU_DECLINE">		
+            <value locale="en-GB">Decline</value>	
+            <value locale="es-ES">Descenso</value>	
+            <value locale="de-DE">Ablehnen</value>	
+            <value locale="fr-FR">Refuser</value>	
+            <value locale="it-IT">Declino</value>	
+        </resource>
+        <resource id="113" type="string" name="TXT_TERMS">		
+            <value locale="en-GB">Terms</value>	
+            <value locale="es-ES">Condiciones</value>	
+            <value locale="de-DE">Bedingungen</value>	
+            <value locale="fr-FR">Conditions</value>	
+            <value locale="it-IT">Condizioni</value>	
+        </resource>
+        <resource id="114" type="string" name="TXT_TERMS_HEADER_1">		
+            <value locale="en-GB">Introduction</value>	
+            <value locale="es-ES">Introducción</value>	
+            <value locale="de-DE">Einführung</value>	
+            <value locale="fr-FR">Introduction</value>	
+            <value locale="it-IT">Introduzione</value>	
+        </resource>
+        <resource id="115" type="string" name="TXT_TERMS_HEADER_2">		
+            <value locale="en-GB">Liability</value>	
+            <value locale="es-ES">Responsabilidad</value>	
+            <value locale="de-DE">Haftung</value>	
+            <value locale="fr-FR">Responsabilité</value>	
+            <value locale="it-IT">Responsabilità</value>	
+        </resource>
+        <resource id="116" type="string" name="TXT_TERMS_HEADER_3">		
+            <value locale="en-GB">Limited warranties</value>	
+            <value locale="es-ES">Garantías limitadas</value>	
+            <value locale="de-DE">Eingeschränkte Garantien</value>	
+            <value locale="fr-FR">Les garanties limitées</value>	
+            <value locale="it-IT">Garanzie limitate</value>	
+        </resource>
+        <resource id="117" type="string" name="TXT_TERMS_HEADER_4">		
+            <value locale="en-GB">Indemnity</value>	
+            <value locale="es-ES">Indemnidad</value>	
+            <value locale="de-DE">Entschädigung</value>	
+            <value locale="fr-FR">Indemnité</value>	
+            <value locale="it-IT">Indennità</value>	
+        </resource>
+         <resource id="118" type="string" name="TXT_TERMS_DESC_1">		
+            <value locale="en-GB">These terms and conditions govern your use of the mobile application inBloom. By using this application, you accept these terms and conditions in full. If you disagree with these terms and conditions or any part of these terms and conditions, you must not use inBloom.</value>	
+            <value locale="es-ES">Estos términos y condiciones rigen el uso de la InBloom de aplicaciones móviles. Al utilizar esta aplicación, usted acepta estos términos y condiciones en su totalidad. Si no está de acuerdo con estos términos y condiciones o cualquier parte de estos términos y condiciones, usted no debe utilizar InBloom.</value>	
+            <value locale="de-DE">Diese Bedingungen regeln die Nutzung der mobilen Anwendung Inbloom. Durch die Nutzung dieser Anwendung, akzeptieren Sie diese Bedingungen in vollem Umfang. Wenn Sie mit diesen Bedingungen oder einem Teil dieser Bedingungen und Konditionen nicht einverstanden sind, dürfen Sie nicht verwenden Inbloom.</value>	
+            <value locale="fr-FR">Ces termes et conditions régissent votre utilisation de l'Inbloom application mobile. En utilisant cette application, vous acceptez ces termes et conditions dans leur intégralité. Si vous êtes en désaccord avec ces termes et conditions ou toute partie de ces termes et conditions, vous ne devez pas utiliser Inbloom.</value>	
+            <value locale="it-IT">Questi termini e condizioni regolano l'utilizzo del inBloom applicazione mobile. Utilizzando questa applicazione, l'utente accetta i termini e le condizioni in pieno. Se siete d'accordo con questi termini e condizioni o una parte di questi termini e condizioni, non si deve usare inBloom.</value>	
+        </resource>
+        <resource id="119" type="string" name="TXT_TERMS_DESC_2">		
+            <value locale="en-GB">We will not be liable to you in respect of any losses arising out of any event or events beyond our reasonable control. We will not be liable to you in case you are pregnant due to lack of precision in the software logic. We will not be liable to you in respect of any loss or corruption of any data, database or software.</value>	
+            <value locale="es-ES">No seremos responsables ante usted con respecto a cualquier pérdida que se derive de cualquier evento o eventos fuera de nuestro control. No seremos responsables ante usted en caso de que está embarazada, debido a la falta de precisión en la lógica de software. No seremos responsables ante usted con respecto a cualquier pérdida o corrupción de datos, base de datos o software.</value>	
+            <value locale="de-DE">Wir sind nicht haftbar zu machen für Schäden, die aus einer oder mehreren Ereignissen außerhalb unserer Kontrolle liegen. Wir sind nicht haftbar zu machen, falls Sie schwanger sind aufgrund mangelnder Präzision in der Software-Logik sind. Wir sind nicht haftbar zu machen in Bezug auf einen Verlust oder die Beschädigung von Daten, Datenbanken oder Software.</value>	
+            <value locale="fr-FR">Nous ne serons pas responsables envers vous pour toute perte découlant d'un événement ou d'événements indépendants de notre contrôle raisonnable. Nous ne serons pas responsables envers vous au cas où vous êtes enceinte à cause du manque de précision dans la logique du logiciel. Nous ne serons pas responsables envers vous pour toute perte ou corruption des données, des bases de données ou de logiciels.</value>	
+            <value locale="it-IT">Noi non saremo responsabili nei Vostri confronti di eventuali perdite derivanti da qualsiasi evento o eventi al di fuori del nostro ragionevole controllo. Non saremo responsabili nei vostri confronti in caso di gravidanza a causa della mancanza di precisione nella logica del software. Non saremo responsabili nei vostri confronti per qualsiasi perdita o corruzione di, database di dati o software.</value>	
+        </resource>
+        <resource id="120" type="string" name="TXT_TERMS_DESC_3">		
+            <value locale="en-GB">We do not warrant the completeness or accuracy of the information produced by this application; nor do we commit to ensuring that the application remains logical and reliable. To the maximum extent permitted by applicable law we exclude all representations, warranties and conditions relating to the use of this application (including, without limitation, any warranties implied by law of satisfactory quality, fitness for purpose and/or the use of reasonable care and skill).</value>	
+            <value locale="es-ES">Nosotros no garantizamos la integridad y exactitud de la información generada por este software, ni tampoco nos comprometemos a garantizar que el software sigue siendo lógico y confiable. En la medida máxima permitida por la ley, excluimos todas las representaciones, garantías y condiciones relacionadas con el uso de esta aplicación (incluyendo, sin limitación, cualquier garantía implícita por la ley de calidad satisfactoria, aptitud para el uso y / o la utilización de un cuidado razonable y habilidad).</value>	
+            <value locale="de-DE">Wir übernehmen keine Gewähr für die Vollständigkeit oder Genauigkeit der Informationen, die von dieser Software erzeugt werden; und  übernehmen  keine Gewähr dafür, dass die Software logisch und zuverlässig bleibt. In größtmöglichem Umfang, durch anwendbares Recht  erlaubt, schliessen wir alle Darstellungen, Garantien und Bedingungen in Bezug auf die Nutzung dieser Anwendung (einschließlich, ohne Einschränkung, sämtliche gesetzliche Gewährleistungen von zufriedenstellender Qualität impliziert, Zweckmäßigkeit und / oder die sorgflätige and angemessene Anwendung) aus.</value>	
+            <value locale="fr-FR">Nous ne garantissons pas l'exhaustivité ou l'exactitude de l'information produite par ce logiciel, ni ne nous engageons à assurer que le logiciel reste logique et fiable. Dans la mesure maximale permise par la loi applicable l'on exclut toutes les représentations, garanties et conditions relatives à l'utilisation de cette application (y compris, sans limitation, toute garantie implicite par la loi de qualité satisfaisante, aptitude à l'usage et / ou l'utilisation d'un soin raisonnable et compétences).</value>	
+            <value locale="it-IT">Noi non garantiamo la completezza o accuratezza delle informazioni prodotte da questo software, né ci impegniamo a garantire che il software rimanga logica e affidabile. Nella misura massima consentita dalla legge applicabile escludiamo tutti, garanzie e condizioni riguardanti l'uso di questa applicazione (inclusi, senza limitazione, qualsiasi garanzia implicita per legge di qualità soddisfacente, idoneità allo scopo e / o l'uso di ragionevole cura e abilità).</value>	
+        </resource>
+        <resource id="121" type="string" name="TXT_TERMS_DESC_4">		
+            <value locale="en-GB">You hereby indemnify us and undertake to keep us indemnified against any losses, damages, costs, liabilities and expenses (including without limitation legal expenses and any amounts paid by us to a third party in settlement of a claim or dispute on the advice of our legal advisers) incurred or suffered by us arising out of any breach by you of any provision of these terms and conditions[, or arising out of any claim that you have breached any provision of these terms and conditions].</value>	
+            <value locale="es-ES">Por la presente, nos indemnizará y nos comprometemos a mantenernos indemnizados por cualquier pérdida, daños, costos, responsabilidades y gastos (incluyendo, sin limitación de los gastos jurídicos y los importes pagados por nosotros los que una tercera parte en la solución de una demanda o disputa en el consejo de nuestro ordenamiento jurídico asesores) incurridos o sufridos por nosotros que surja de cualquier incumplimiento por su parte de cualquier disposición de estos términos y condiciones [o como resultado de cualquier reclamo que usted ha violado cualquier disposición de estos términos y condiciones].</value>	
+            <value locale="de-DE">Sie erklären sich hiermit verpflichtet, und verpflichten sich weiterhin, uns gegen jegliche Verluste, Schäden, Kosten, Haftungen und Ausgaben die entstanden sind (einschließlich und ohne Einschränkung der legalen Kosten und aller Beträge, die, nach Beratung unseres Anwalts, durch Dritte in Erfüllung einer Forderung oder eines Streits entstehen), die sich aus einer Verletzung dieser Bedingungen und Konditionen Ihrerseits ergeben [oder die sich aus Ansprüchen ergeben, dass Sie eine Bestimmung dieser Bedingungen und Konditionen verletzt haben].</value>	
+            <value locale="fr-FR">Par la présente vous nous indemniser et nous tenir s'engagent à indemniser toutes les pertes, dommages, coûts, responsabilités et dépenses (y compris, sans limitation les frais juridiques et tous les montants payés par nous à un tiers en règlement d'une réclamation ou litige sur les conseils de notre système juridique conseillers) engagés ou subis par nous découlant de toute violation par vous de toute disposition de ces termes et conditions [, ou découlant de toute réclamation que vous avez violé une disposition de ces termes et conditions].</value>	
+            <value locale="it-IT">Con la presente ci risarcire e si impegnano a tenerci indenne da ogni perdita, danni, costi, oneri e spese (incluse senza limitazione le spese legali e gli importi pagati da noi a terzi in liquidazione di un sinistro o di controversia su consiglio dei nostri legali consulenti) sostenute o subite da noi derivanti da qualsiasi violazione da parte di qualsiasi disposizione di questi termini e condizioni [, o derivanti da qualsiasi pretesa che lei ha violato qualsiasi clausola di questi termini e condizioni].</value>	
+        </resource>
+        <resource id="122" type="string" name="TXT_ALERT_ENTRY_UPDATED">		
+            <value locale="en-GB">Your entries have been updated.</value>	
+            <value locale="es-ES">Las entradas han sido actualizadas.</value>	
+            <value locale="de-DE">Die Daten sind aktualisiert.</value>	
+            <value locale="fr-FR">Vos entrées ont été mis à jour.</value>	
+            <value locale="it-IT">Le voci sono state aggiornate.</value>	
+        </resource>
+        <resource id="123" type="string" name="TXT_ALERT_NOENTRIES_ADDED">		
+            <value locale="en-GB">No entries added yet.</value>	
+            <value locale="es-ES">No hay entradas todavia.</value>	
+            <value locale="de-DE">Keine Einträge hinzugefügt.</value>	
+            <value locale="fr-FR">Pas d'entrées encore ajouté.</value>	
+            <value locale="it-IT">Nessuna voce ancora aggiunto.</value>	
+        </resource>
+        <resource id="124" type="string" name="TXT_ABOUT_APP_NAME">		
+            <value locale="en-GB">Application name</value>	
+            <value locale="es-ES">Nombre del programa</value>	
+            <value locale="de-DE">Name der Software</value>	
+            <value locale="fr-FR">Nom du logiciel</value>	
+            <value locale="it-IT">Nome del software</value>	
+        </resource>
+        <resource id="125" type="string" name="TXT_ABOUT_VERSION">		
+            <value locale="en-GB">Version</value>	
+            <value locale="es-ES">Versión</value>	
+            <value locale="de-DE">Version</value>	
+            <value locale="fr-FR">Version</value>	
+            <value locale="it-IT">Versione</value>	
+        </resource>
+        <resource id="126" type="string" name="TXT_ABOUT_DEVELOPER">		
+            <value locale="en-GB">Developer</value>	
+            <value locale="es-ES">Promotor</value>	
+            <value locale="de-DE">Entwickler</value>	
+            <value locale="fr-FR">Développeur</value>	
+            <value locale="it-IT">Sviluppatore</value>	
+        </resource>
+        <resource id="127" type="string" name="TXT_ABOUT_DEDICATED_TITLE">		
+            <value locale="en-GB">Dedicated to</value>	
+            <value locale="es-ES">Dedicado a</value>	
+            <value locale="de-DE">Dedicated to</value>	
+            <value locale="fr-FR">Dédié à</value>	
+            <value locale="it-IT">Dedicato a</value>	
+        </resource>
+        <resource id="128" type="string" name="TXT_ABOUT_DEDICATED_TEXT">		
+            <value locale="en-GB">My Wife Narisha</value>	
+            <value locale="es-ES">Mi esposa Narisha</value>	
+            <value locale="de-DE">Meine Frau Narisha</value>	
+            <value locale="fr-FR">Ma femme Narisha</value>	
+            <value locale="it-IT">Mia moglie Narisha</value>	
+        </resource>
+        <resource id="129" type="string" name="TXT_HELP_YOURPHASES_TITLE">		
+            <value locale="en-GB">Your phases</value>	
+            <value locale="es-ES">Sus fases</value>	
+            <value locale="de-DE">Ihre Phasen</value>	
+            <value locale="fr-FR">Vos phases</value>	
+            <value locale="it-IT">Il tuo fasi</value>	
+        </resource>
+        <resource id="130" type="string" name="TXT_HELP_YOURPHASES_DESC">		
+            <value locale="en-GB">Your cycle has distinct phases that you should be aware of. Your period is the first day of your cycle. It usually lasts about 7 days but varies for every person. After your period is complete you will ovulate and then enter your luteal phase. This phase will last till the end of your cycle and then the latter will start again unless you are pregnant. The settings screen captures your average luteal, period and cycle lengths. Those values are then used to calculate your most fertile days, your ovulation day and your safe days. Please enter those important values if you know them. Default one are provided otherwise.</value>	
+            <value locale="es-ES">Su ciclo tiene distintas fases que debe tener en cuenta. Su período es el primer día de su ciclo. Por lo general, dura unos 7 días, pero varía para cada persona. Después de su período está terminada, se va a ovular, y luego entrar en su fase lútea. Esta fase durará hasta el final de su ciclo y luego la segunda se iniciará de nuevo a menos que usted está embarazada. La pantalla de configuración de captura de su longitud media lútea, período y ciclo. Esos valores se utilizan para calcular tus días más fértiles, el día de la ovulación y los días salvo. Por favor, introduzca los valores importantes, si los conoce. Por defecto se disponga lo contrario.</value>	
+            <value locale="de-DE">Ihr Zyklus hat verschiedene Phasen, die Sie beachten sollten. Ihre Zeit ist der erste Tag deines Zyklus. Es dauert in der Regel ca. 7 Tage, sondern variiert für jeden Menschen. Nach Ihrer Zeit abgeschlossen ist, wird Eisprung und geben Sie dann Ihren Lutealphase. Diese Phase wird bis zum Ende des Zyklus dauern und dann diese wieder gestartet werden, wenn Sie schwanger sind. Die Einstellungen Screenshots Ihre durchschnittliche Lutealphase, Periode und Zykluslänge. Diese Werte werden dann verwendet, um Ihre fruchtbarsten Tage, Ihre Eisprung Tag und Ihre sichere Tage zu berechnen. Bitte geben Sie die wichtigen Werte, wenn Sie sie kennen. Standard eins sind nichts anderes bestimmt ist.</value>	
+            <value locale="fr-FR">Votre cycle comporte plusieurs phases distinctes que vous devriez être au courant. Votre période est le premier jour de votre cycle. Elle dure généralement environ 7 jours, mais varie pour chaque personne. Après votre période est terminée, vous ovuler et puis entrez votre phase lutéale. Cette phase durera jusqu'à la fin de votre cycle et ensuite ce dernier commencera à nouveau à moins que vous êtes enceinte. L'écran des paramètres capte votre moyenne longueurs lutéale, la période et de cycle. Ces valeurs sont ensuite utilisées pour calculer vos jours les plus fertiles, votre jour d'ovulation et vos jours sans danger. S'il vous plaît entrer ces valeurs importantes si vous les connaissez. Par défaut sont fournis autrement.</value>	
+            <value locale="it-IT">Il tuo ciclo ha fasi distinte che si dovrebbe essere a conoscenza. Il tuo periodo è il primo giorno del ciclo. E 'di solito dura circa 7 giorni, ma varia per ogni persona. Dopo che il periodo è completa si ovulazione e quindi inserire la fase luteale. Questa fase durerà fino alla fine del ciclo e quindi il secondo inizierà nuovamente a meno di essere incinta. La schermata delle impostazioni cattura la vostra lunghezza media luteale, periodo e ciclo. Questi valori vengono poi utilizzati per calcolare i tuoi giorni più fertili, il vostro giorno di ovulazione e le vostre giornate al sicuro. Si prega di inserire i valori importanti, se li conoscete. Di default sono disponibili altrimenti.</value>	
+        </resource>
+        <resource id="131" type="string" name="TXT_HELP_THECALENDAR_TITLE">		
+            <value locale="en-GB">The calendar screen</value>	
+            <value locale="es-ES">La pantalla del calendario</value>	
+            <value locale="de-DE">Der Kalender-Bildschirm</value>	
+            <value locale="fr-FR">L'écran du calendrier</value>	
+            <value locale="it-IT">Il calendario dello schermo</value>	
+        </resource>
+        <resource id="132" type="string" name="TXT_HELP_THECALENDAR_DESC">		
+            <value locale="en-GB">The calendar screen has coloured days to show your current cycle phase. It predicts your ovulation day and fertile days. The period days are painted in red while fertile days are green. You can swipe the screen left and right to view your previous and future cycle details. Clicking on a day will open up the entries screen for this day. You can then enter your symptoms and select any other attributes you wish for this day.</value>	
+            <value locale="es-ES">La pantalla del calendario tiene días de color para mostrar la fase del ciclo actual. Predice el día de la ovulación y días fértiles. Los días de período están pintadas de rojo, mientras que los días fértiles son de color verde. Se puede deslizar la pantalla hacia la izquierda y derecha para ver los detalles de su ciclo anterior y el futuro. Al hacer clic en un día se abrirá la pantalla de entradas para el día de hoy. A continuación, puede entrar en sus síntomas y seleccione cualquier otro atributo que desea para este día.</value>	
+            <value locale="de-DE">Der Kalender-Bildschirm hat farbige Tage, um Ihre aktuelle Zyklusphase zu zeigen. Es Vorhersage Ihres Eisprungs Tag und fruchtbaren Tage. Die Frist Tage sind in rot lackiert, während der fruchtbaren Tage sind grün. Sie können Swipe dem Bildschirm links und rechts zu Ihrem bisherigen und künftigen Zyklus Details anzuzeigen. Mit einem Klick auf einen Tag öffnet sich die Einträge Bildschirm für diesen Tag. Anschließend können Sie Ihre Symptome und wählen Sie eine andere Attribute, die Sie möchten für diesen Tag.</value>	
+            <value locale="fr-FR">L'écran du calendrier a jour de couleur pour montrer votre phase du cycle actuel. Il prédit jour de votre ovulation et le jour fertiles. La période de jour sont peintes en rouge tandis que les jours fertiles sont verts. Vous pouvez glisser l'écran de gauche et de droite pour afficher vos coordonnées cycle précédent et à venir. En cliquant sur ​​un jour va ouvrir l'écran des entrées pour cette journée. Vous pouvez alors entrer vos symptômes et de sélectionner d'autres attributs que vous souhaitez pour cette journée.</value>	
+            <value locale="it-IT">La schermata del calendario ha giorni colorati per mostrare la fase attuale del ciclo. Prevede il tuo giorno di ovulazione e giorni fertili. Le giornate periodo sono dipinte in rosso mentre i giorni fertili sono di colore verde. È possibile scorrere lo schermo a destra ea sinistra per visualizzare i dettagli del ciclo precedente e futuro. Cliccando su un giorno si aprirà la schermata di voci per questo giorno. È quindi possibile inserire i vostri sintomi e selezionare qualsiasi altro attributo che si desidera per questo giorno.</value>	
+        </resource>
+        <resource id="133" type="string" name="TXT_HELP_ENTERING_TITLE">		
+            <value locale="en-GB">Entering values</value>	
+            <value locale="es-ES">Introducción de valores</value>	
+            <value locale="de-DE">Die Eingabe von Werten</value>	
+            <value locale="fr-FR">Saisie des valeurs</value>	
+            <value locale="it-IT">Valori che entrano</value>	
+        </resource>
+        <resource id="134" type="string" name="TXT_HELP_ENTERING_DESC">		
+            <value locale="en-GB">By pressing a calendar day you will be taken to the entries screen for the day. On this screen you can kick start your period by selecting the top checkbox. You can enter your mood, intimacy flag, weight, temperature and many more items. All those entered values are then saved when you hit the save menu option on the screen. Those values can later be viewed and edited by either pressing on the calendar day of by viewing the list screen.</value>	
+            <value locale="es-ES">Pulsando un día del calendario que será llevado a la pantalla de entradas para el día. En esta pantalla se puede poner en marcha su período de selección de la casilla superior. Usted puede entrar a su estado de ánimo, la bandera de la intimidad, el peso, la temperatura y muchos más artículos. Todos los valores introducidos se guardan cuando se pulse la opción de menú Guardar en la pantalla. Los valores más adelante pueden ser vistos y editados, ya sea presionando en el calendario de días viendo la pantalla de lista.</value>	
+            <value locale="de-DE">Durch Drücken einer Kalendertag Sie die Einträge Bildschirm für den Tag eingenommen werden. Auf diesem Bildschirm können Sie Start in den Zeitraum, indem Sie die obere Checkbox. Sie können Ihre Stimmung, Intimität Flagge, Gewicht, Temperatur und viele weitere Artikel. All diese eingegebenen Werte werden dann gespeichert, wenn Sie das Speichern Menüpunkt auf dem Bildschirm zu treffen. Diese Werte können später eingesehen und bearbeitet werden entweder durch Drücken auf den Kalendertag, indem Sie in der Liste angezeigt.</value>	
+            <value locale="fr-FR">En appuyant sur un jour du calendrier, vous serez amené à l'écran les entrées pour la journée. Sur cet écran, vous pouvez démarrer votre période en cochant la case en haut. Vous pouvez entrer votre humeur, le drapeau d'intimité, le poids, la température et de nombreux autres articles. Toutes ces valeurs saisies sont alors enregistrées lorsque vous appuyez sur l'option de menu Enregistrer sur l'écran. Ces valeurs peuvent ensuite être visualisés et édités soit en appuyant sur ​​le calendrier des jours en regardant l'écran de liste.</value>	
+            <value locale="it-IT">Premendo un giorno di calendario sarete portati alla schermata di voci per la giornata. In questa schermata è possibile dare il via il periodo selezionando la casella di controllo superiore. Puoi inserire il tuo stato d'animo, bandiera intimità, peso, temperatura e molti altri oggetti. Tutti quei valori introdotti vengono quindi salvati quando si preme l'opzione di menu salvare sullo schermo. Questi valori possono poi essere visualizzati e modificati sia premendo il giorno di calendario del visualizzando la schermata di elenco.</value>	
+        </resource>
+        <resource id="137" type="string" name="TXT_HELP_CHARTS_TITLE">		
+            <value locale="en-GB">The charts</value>	
+            <value locale="es-ES">Los gráficos</value>	
+            <value locale="de-DE">Die Charts</value>	
+            <value locale="fr-FR">Les graphiques</value>	
+            <value locale="it-IT">I grafici</value>	
+        </resource>
+        <resource id="138" type="string" name="TXT_HELP_CHARTS_DESC">		
+            <value locale="en-GB">The charts plot your recorded temperatures and weights simultaneously for a given month. All values are converted to your settings unit before being plotted. Temperature is in red and weight in blue.</value>	
+            <value locale="es-ES">Las tablas de la parcela de su temperaturas registradas y los pesos de forma simultánea para un mes determinado. Todos los valores se convierten a su unidad de configuración, antes de ser trazada. La temperatura es de color rojo y el peso en azul.</value>	
+            <value locale="de-DE">Die Diagramme Plot Ihre aufgezeichneten Temperaturen und Gewichte gleichzeitig für einen bestimmten Monat. Alle Werte sind, um Ihre Einstellungen Einheit, bevor es aufgetragen umgewandelt. Die Temperatur ist in rot und Gewicht in blau.</value>	
+            <value locale="fr-FR">Les graphiques de votre parcelle températures enregistrées simultanément et poids pour un mois donné. Toutes les valeurs sont converties à votre unité de paramètres avant d'être tracée. La température est en rouge et le poids en bleu.</value>	
+            <value locale="it-IT">I grafici tracciare la vostra temperature registrate e pesi contemporaneamente per un determinato mese. Tutti i valori sono convertiti alla vostra unità impostazioni prima di essere tracciati. La temperatura è in rosso e il peso in blu.</value>	
+        </resource> 
+        </set>
+</resources>
+

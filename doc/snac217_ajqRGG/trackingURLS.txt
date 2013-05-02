@@ -1,0 +1,8 @@
+Link targets with SiteCatalyst tags
+
+728x90	http://store.ovi.com/content/212313
+468x60	http://store.ovi.com/content/212313
+300x250	http://store.ovi.com/content/212313
+234x60	http://store.ovi.com/content/212313
+160x600	http://store.ovi.com/content/212313
+120x600	http://store.ovi.com/content/212313

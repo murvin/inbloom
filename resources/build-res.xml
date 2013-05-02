@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="Sample" default="task-build-res" basedir="../">
+    <path id="classrefcpy">
+        <fileset dir="lib">
+            <include name="ResourceBuilder.jar" />
+            <include name="ResourceBuilderExt.jar" />
+        </fileset>
+    </path>
+
+    <target name="task-build-res">
+        <taskdef name="builder"
+                 classname="com.tricastmedia.resource.ResourceBuilderExt"
+                 classpathref="classrefcpy" />
+
+        <typedef name="locale"
+                 classname="com.tricastmedia.resource.LocaleElement"
+                 classpathref="classrefcpy" />
+
+        <builder basename="GlobalResources"
+                 source="/Users/mbhantooa/Projects/J2ME/InBloom/src/com/inbloom/utils/"
+                 descriptor="/Users/mbhantooa/Projects/J2ME/InBloom/resources/resources.xml"
+                 destination="/Users/mbhantooa/Projects/J2ME/InBloom/res/"
+                 path="/Users/mbhantooa/Projects/J2ME/InBloom/resources/" 
+                  >
+                   
+        <locale name="common"/>
+        <locale name="en-GB" id="1"/>
+        <locale name="es-ES" id="2"/>
+        <locale name="de-DE" id="3"/>
+        <locale name="fr-FR" id="4"/>
+        <locale name="it-IT" id="5"/>
+        
+        </builder>
+    </target>
+    
+</project>
+

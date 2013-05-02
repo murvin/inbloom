@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<!DOCTYPE resources SYSTEM "resources.dtd">
+<resources version="1.0">  
+    <set basename="GraphicsResources">							
+        <resource id="1" type="binary" name="BG">	
+            <value file="bg.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/bg.png"></value>	
+            <value locale="themeWinter" file="/WINTER/bg.png"></value>	
+        </resource>
+        <resource id="2" type="binary" name="MENU_BAR">	
+            <value file="bottomBar.png"></value>
+            <value locale="themeAutumn" file="/AUTUMN/bottomBar.png"></value>
+            <value locale="themeWinter" file="/WINTER/bottomBar.png"></value>
+        </resource>
+        <resource id="3" type="binary" name="TAB_BG">	
+            <value file="topBar.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/topBar.png"></value>
+            <value locale="themeWinter" file="/WINTER/topBar.png"></value>
+        </resource>
+        <resource id="4" type="binary" name="TAB_CAL">	
+            <value file="cal.png"></value>	
+        </resource>
+        <resource id="5" type="binary" name="TAB_LIST">	
+            <value file="list.png"></value>	
+        </resource>
+        <resource id="6" type="binary" name="TAB_CHARTS">	
+            <value file="charts.png"></value>	
+        </resource>
+        <resource id="7" type="binary" name="TAB_SETTINGS">	
+            <value file="settings.png"></value>	
+        </resource>
+        <resource id="8" type="string" name="TXT_MENU_TEXT_COLOR">		
+            <value>16777215</value>	
+        </resource>
+        <resource id="9" type="binary" name="LEFT_ARROW">	
+            <value file="leftArrow.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/leftArrow.png"></value>
+            <value locale="themeWinter" file="/WINTER/leftArrow.png"></value>
+        </resource>
+        <resource id="10" type="binary" name="RIGHT_ARROW">	
+            <value file="rightArrow.png"></value>
+            <value locale="themeAutumn" file="/AUTUMN/rightArrow.png"></value>
+            <value locale="themeWinter" file="/WINTER/rightArrow.png"></value>
+        </resource>    
+        <resource id="11" type="string" name="TXT_CAL_HEADER_TEXT_COLOR">		
+            <value>0</value>	
+        </resource>
+        <resource id="12" type="string" name="TXT_CAL_BORDER_COLOR">		
+            <value>11184810</value>	
+        </resource>
+        <resource id="13" type="string" name="TXT_MAPKEY_FERTILE_COLOR">		
+            <value>12451779</value>	
+        </resource>
+        <resource id="14" type="string" name="TXT_MAPKEY_TODAY_COLOR">		
+            <value>10601215</value>	
+        </resource>
+        <resource id="15" type="string" name="TXT_MAPKEY_OVULATION_COLOR">		
+            <value>16769172</value>	
+        </resource>
+        <resource id="16" type="string" name="TXT_MAPKEY_PERIOD_COLOR">		
+            <value>16755370</value>	
+        </resource>
+        <resource id="17" type="string" name="TXT_MAPKEY_TEXT_COLOR">		
+            <value>0</value>	
+        </resource>
+        <resource id="18" type="binary" name="IMG_SELECTED_TAB">	
+            <value file="selectedPatch.png"></value>	
+        </resource>   
+        <resource id="19" type="binary" name="IMG_BG_PANEL">	
+            <value file="bgPanel.png"></value>	
+        </resource>
+        <resource id="20" type="binary" name="IMG_HIGHLIGHT_PATCH">	
+            <value file="highlightPatch.png"></value>	
+        </resource>        
+        <resource id="21" type="binary" name="FONT_THEME_SMALL">	
+            <value file="droid_r_11.png"></value>	
+        </resource>        
+        <resource id="22" type="binary" name="FONT_THEME_MEDIUM">	
+            <value file="droid_r_13.png"></value>	
+        </resource>  
+        <resource id="23" type="string" name="TXT_THEME_MAIN_COLOR">		
+            <value>9712509</value>	
+        </resource>
+        <resource id="24" type="binary" name="IMG_TEXTINPUT_PATCH">	
+            <value file="textinputPatch.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/textinputPatch.png"></value>
+            <value locale="themeWinter" file="/WINTER/textinputPatch.png"></value>
+        </resource>  
+        <resource id="25" type="binary" name="IMG_HIGHLIGHT_PATCH_ROUNDCORNER">	
+            <value file="highlightRoundedPatch.png"></value>	
+        </resource>  
+        <resource id="26" type="binary" name="FONT_THEME_LARGE">	
+            <value file="droid_sb_15.png"></value>	
+        </resource>   
+        <resource id="27" type="binary" name="IMG_ENTRY_FLOW0">	
+            <value file="flow0.png"></value>	
+        </resource>   
+        <resource id="28" type="binary" name="IMG_ENTRY_FLOW1">	
+            <value file="flow1.png"></value>	
+        </resource>   
+        <resource id="29" type="binary" name="IMG_ENTRY_FLOW2">	
+            <value file="flow2.png"></value>	
+        </resource>   
+        <resource id="30" type="binary" name="IMG_ENTRY_FLOW3">	
+            <value file="flow3.png"></value>	
+        </resource>   
+        <resource id="31" type="binary" name="IMG_ENTRY_INT0">	
+            <value file="int0.png"></value>	
+        </resource>   
+        <resource id="32" type="binary" name="IMG_ENTRY_INT1">	
+            <value file="int1.png"></value>	
+        </resource>   
+        <resource id="33" type="binary" name="IMG_ENTRY_SMILE0">	
+            <value file="smile0.png"></value>	
+        </resource>   
+        <resource id="34" type="binary" name="IMG_ENTRY_SMILE1">	
+            <value file="smile1.png"></value>	
+        </resource>   
+        <resource id="35" type="binary" name="IMG_ENTRY_SMILE2">	
+            <value file="smile2.png"></value>	
+        </resource>   
+        <resource id="36" type="binary" name="IMG_ENTRY_SMILE3">	
+            <value file="smile3.png"></value>	
+        </resource>   
+        <resource id="37" type="binary" name="IMG_ENTRY_SMILE4">	
+            <value file="smile4.png"></value>	
+        </resource>   
+        <resource id="38" type="binary" name="IMG_ENTRY_SPOT0">	
+            <value file="spot0.png"></value>	
+        </resource>   
+        <resource id="39" type="binary" name="IMG_ENTRY_SPOT1">	
+            <value file="spot1.png"></value>	
+        </resource>   
+        <resource id="40" type="binary" name="IMG_ENTRY_TEMP">	
+            <value file="temp.png"></value>	
+        </resource>   
+        <resource id="41" type="binary" name="IMG_ENTRY_WEIGHT">	
+            <value file="weight.png"></value>	
+        </resource>   
+        <resource id="42" type="binary" name="IMG_ENTRY_ARROW">	
+            <value file="arrow.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/arrow.png"></value>
+            <value locale="themeWinter" file="/WINTER/arrow.png"></value>
+        </resource>   
+        <resource id="43" type="binary" name="IMG_ENTRY_SMILE5">	
+            <value file="smile5.png"></value>	
+        </resource>   
+        <resource id="44" type="binary" name="IMG_CHECKBOX_ON">	
+            <value file="chkboxOn.png"></value>	
+             <value locale="themeAutumn" file="./AUTUMN/chkboxOn.png"></value>
+             <value locale="themeWinter" file="./WINTER/chkboxOn.png"></value>
+        </resource>   
+        <resource id="45" type="binary" name="IMG_CHECKBOX_OFF">	
+            <value file="chkboxOff.png"></value>	
+        </resource>  
+        <resource id="46" type="binary" name="IMG_LOGO">	
+            <value file="logo.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/logo.png"></value>
+            <value locale="themeWinter" file="/WINTER/logo.png"></value>
+        </resource>   
+        <resource id="48" type="binary" name="IMG_TABLABEL_CAL_EN">	
+            <value file="calendarLabelEn.png"></value>	
+        </resource>  
+        <resource id="49" type="binary" name="IMG_TABLABEL_CAL_FR">	
+            <value file="calendarLabelFr.png"></value>	
+        </resource>  
+        <resource id="50" type="binary" name="IMG_TABLABEL_CAL_ES">	
+            <value file="calendarLabelEs.png"></value>	
+        </resource>  
+        <resource id="51" type="binary" name="IMG_TABLABEL_CAL_DE">	
+            <value file="calendarLabelDe.png"></value>	
+        </resource>   
+        <resource id="52" type="binary" name="IMG_TABLABEL_CAL_IT">	
+            <value file="calendarLabelEs.png"></value>	
+        </resource>   
+        <resource id="53" type="binary" name="IMG_TABLABEL_LIST_EN">	
+            <value file="listLabelEn.png"></value>	
+        </resource>  
+        <resource id="54" type="binary" name="IMG_TABLABEL_LIST_FR">	
+            <value file="listLabelFr.png"></value>	
+        </resource>  
+        <resource id="55" type="binary" name="IMG_TABLABEL_LIST_ES">	
+            <value file="listLabelEs.png"></value>	
+        </resource>  
+        <resource id="56" type="binary" name="IMG_TABLABEL_LIST_DE">	
+            <value file="listLabelFr.png"></value>	
+        </resource>   
+        <resource id="57" type="binary" name="IMG_TABLABEL_LIST_IT">	
+            <value file="listLabelEs.png"></value>	
+        </resource>   
+        <resource id="58" type="binary" name="IMG_TABLABEL_CHARTS_EN">	
+            <value file="chartsLabelEn.png"></value>	
+        </resource>  
+        <resource id="59" type="binary" name="IMG_TABLABEL_CHARTS_FR">	
+            <value file="chartsLabelFr.png"></value>	
+        </resource>  
+        <resource id="60" type="binary" name="IMG_TABLABEL_CHARTS_ES">	
+            <value file="chartsLabelEs.png"></value>	
+        </resource>  
+        <resource id="61" type="binary" name="IMG_TABLABEL_CHARTS_DE">	
+            <value file="chartsLabelEn.png"></value>	
+        </resource>   
+        <resource id="62" type="binary" name="IMG_TABLABEL_CHARTS_IT">	
+            <value file="chartsLabelIt.png"></value>	
+        </resource> 
+        <resource id="63" type="binary" name="IMG_TABLABEL_SETTINGS_EN">	
+            <value file="settingsLabelEn.png"></value>	
+        </resource>  
+        <resource id="64" type="binary" name="IMG_TABLABEL_SETTINGS_FR">	
+            <value file="settingsLabelFr.png"></value>	
+        </resource>  
+        <resource id="65" type="binary" name="IMG_TABLABEL_SETTINGS_ES">	
+            <value file="settingsLabelEs.png"></value>	
+        </resource>  
+        <resource id="66" type="binary" name="IMG_TABLABEL_SETTINGS_DE">	
+            <value file="settingsLabelDe.png"></value>	
+        </resource>   
+        <resource id="67" type="binary" name="IMG_TABLABEL_SETTINGS_IT">	
+            <value file="settingsLabelIt.png"></value>	
+        </resource>   
+        <resource id="68" type="binary" name="IMG_BUTTON_PATCH">	
+            <value file="buttonPatch.png"></value>	
+            <value locale="themeAutumn" file="/AUTUMN/buttonPatch.png"></value>
+            <value locale="themeWinter" file="/WINTER/buttonPatch.png"></value>
+        </resource>   
+        <resource id="69" type="string" name="TXT_CHARTKEY_TEMP">		
+            <value>15671553</value>	
+        </resource>
+        <resource id="70" type="string" name="TXT_CHARTKEY_WEIGHT">		
+            <value>13512</value>	
+        </resource>
+        <resource id="71" type="string" name="TXT_CHARTKEY_EMOTIONS">		
+            <value>37642</value>	
+        </resource>
+        <resource id="72" type="string" name="TXT_CHARTK_WEEK_FILL_COLOUR">		
+            <value>15921906</value>	
+        </resource>
+        <resource id="73" type="string" name="TXT_CHART_XAXIS_COLOUR">		
+            <value>8947848</value>	
+        </resource>
+        <resource id="74" type="binary" name="IMG_FLAG_EN">	
+            <value file="flagEn.png"></value>	
+        </resource>   
+        <resource id="75" type="binary" name="IMG_FLAG_FR">	
+            <value file="flagFr.png"></value>	
+        </resource>   
+        <resource id="76" type="binary" name="IMG_FLAG_IT">	
+            <value file="flagIt.png"></value>	
+        </resource>   
+        <resource id="77" type="binary" name="IMG_FLAG_DE">	
+            <value file="flagDe.png"></value>	
+        </resource>   
+        <resource id="78" type="binary" name="IMG_FLAG_ES">	
+            <value file="flagEs.png"></value>	
+        </resource>   
+        <resource id="79" type="string" name="TXT_LIGHTBOX_COLOR">		
+            <value>11227312</value>	
+            <value locale="themeAutumn">10817536</value>
+            <value locale="themeWinter">4878748</value>
+        </resource>
+        <resource id="80" type="binary" name="IMG_BG_DEFAULT">	
+            <value file="bgDefaultIcon.png"></value>
+        </resource>
+        <resource id="81" type="binary" name="IMG_BG_AUTUMN">	
+            <value file="bgAutumnIcon.png"></value>
+        </resource>
+        <resource id="82" type="binary" name="IMG_BG_WINTER">	
+            <value file="bgWinterIcon.png"></value>
+        </resource>
+        <resource id="83" type="binary" name="IMG_HELP_CAPTURE_1">	
+            <value file="capture1.png"></value>
+        </resource>
+        <resource id="84" type="binary" name="IMG_HELP_CAPTURE_2">	
+            <value file="capture2.png"></value>
+        </resource>
+        <resource id="85" type="binary" name="IMG_HELP_CAPTURE_3">	
+            <value file="capture3.png"></value>
+        </resource>
+        <resource id="86" type="binary" name="IMG_HELP_CAPTURE_4">	
+            <value file="capture4.png"></value>
+        </resource>
+        <resource id="87" type="string" name="TXT_AD_BG_COLOR">		
+            <value>10079232</value>	
+        </resource>
+        <resource id="88" type="string" name="TXT_AD_BG_COLOR_HIGH">		
+            <value>16759603</value>	
+        </resource>
+        <resource id="89" type="string" name="TXT_AD_BORDER_COLOR">		
+            <value>5263440</value>	
+        </resource>
+    </set>
+</resources>
+

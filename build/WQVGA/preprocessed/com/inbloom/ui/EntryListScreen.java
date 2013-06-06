@@ -1,5 +1,8 @@
 package com.inbloom.ui;
 
+//#if ADS
+//# import com.inbloom.ui.components.AdvertComponent;
+//#endif 
 import com.inbloom.InBloomController;
 import com.inbloom.model.Date;
 import com.inbloom.model.Entries;
@@ -16,7 +19,7 @@ import com.inbloom.utils.Utils;
 
 
 import com.uikit.animations.UikitTextBox;
-//#if QVGA || WQVGA
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -28,6 +31,7 @@ import com.uikit.painters.PatchPainter;
 import com.uikit.styles.ComponentStyle;
 import com.uikit.styles.TextStyle;
 
+
 import java.util.Vector;
 import javax.microedition.lcdui.Font;
 import javax.microedition.lcdui.Image;
@@ -37,13 +41,12 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     private Vector entriesList;
     private Vector adapterList;
     private Image imgArrow;
-    //#if QVGA || WQVGA
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont 
     //#elif WVGA
-//#     private SystemFont
-    //#endif 
-    med_font, large_font;
-            
+//#                 private SystemFont
+            //#endif 
+            med_font, large_font;
     private PatchPainter onFocusHighLight;
     private int g, h;
     private int lineColour;
@@ -53,6 +56,11 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     //#if WVGA
 //#     private int fontColour;
     //#endif
+    //#if ADS
+//#     private final int ADVERT_ID = 0x004;
+//#     private final int ADVERT_H = 40;
+//#     private AdvertComponent ad;
+    //#endif 
 
     public EntryListScreen() {
         initResources();
@@ -78,7 +86,7 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
         }
 
         imgArrow = Resources.getInstance().getThemeImage(GraphicsResources.IMG_ENTRY_ARROW);
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFontMed = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_MEDIUM);
         med_font = new BitmapFont(imgFontMed, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_MEDIUM, 0);
 
@@ -106,7 +114,6 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     private void addElementsToList(Entries entries) {
 
         adapterList.addElement(entries.getDate());
-
 
         if (entries.getMoodEntry() != null) {
             entries.getMoodEntry().setDate(entries.getDate());
@@ -172,18 +179,29 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     private void initComponents() {
         if (entriesList != null) {
             adapterList = new Vector();
+            //#if ADS
+//#             adapterList.addElement(new Integer(ADVERT_ID));
+            //#endif 
+
             for (int i = 0; i < entriesList.size(); i++) {
                 Entries entries = (Entries) entriesList.elementAt(i);
                 addElementsToList(entries);
             }
             setAdapter(this);
         } else {
+            setLayout(null);
+            int menuBarHeight = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
+            int tabPanelHeight = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG).getHeight();
+            setSize(iWidth, iHeight - menuBarHeight - tabPanelHeight);
             addComponent(getTxtBox(Resources.getInstance().getText(GlobalResources.TXT_ALERT_NOENTRIES_ADDED)));
         }
-        
-        updateBottomOffset();
-        getStyle(true).setPadding(0, padding, bottomPadding, padding);
 
+        updateBottomOffset();
+        int topPadding = 0;
+        //#if ADS
+//#         topPadding = padding;
+        //#endif
+        getStyle(true).setPadding(topPadding, padding, bottomPadding, padding);
     }
 
     private String getDate(Date date) {
@@ -238,7 +256,7 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
 
     private SettingsDelimiter getDateItem(Date date) {
         int w = getWidth() - (padding * 2);
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         return new SettingsDelimiter(getDate(date), w, h - 5, lineColour, large_font);
         //#elif WVGA
 //#         return new SettingsDelimiter(getDate(date), w, h - 5, lineColour, large_font, fontColour);
@@ -274,6 +292,12 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
             return getSymptoms((Date) v.elementAt(0), (int[]) v.elementAt(1));
         } else if (listItem instanceof String) {
             return getTxtBox((String) listItem);
+        } else if (listItem instanceof Integer) {
+            //#if ADS
+//#             ad = new AdvertComponent(iWidth - (padding * 2), ADVERT_H, InBloomController.myMidlet, null);
+//#             ad.downloadAd();
+//#             return ad;
+            //#endif 
         }
 
         return null;

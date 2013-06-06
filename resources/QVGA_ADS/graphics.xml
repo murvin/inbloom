@@ -280,13 +280,16 @@
             <value file="capture4.png"></value>
         </resource>
         <resource id="87" type="string" name="TXT_AD_BG_COLOR">		
-            <value>10079232</value>	
+            <value>12451779</value>	
         </resource>
         <resource id="88" type="string" name="TXT_AD_BG_COLOR_HIGH">		
             <value>16759603</value>	
         </resource>
         <resource id="89" type="string" name="TXT_AD_BORDER_COLOR">		
             <value>5263440</value>	
+        </resource>
+        <resource id="90" type="binary" name="IMG_AD_PRO_BANNER">	
+            <value file="probanner.png"></value>
         </resource>
     </set>
 </resources>

@@ -13,7 +13,7 @@ import com.uikit.painters.PatchPainter;
 import com.uikit.utils.UikitConstant;
 import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.Component;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //# import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -26,7 +26,7 @@ import javax.microedition.lcdui.Image;
 
 public class EntrySelectionScreen extends InBloomScreen {
 
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#     private BitmapFont 
     //#elif WVGA
 //#     private SystemFont
@@ -83,7 +83,7 @@ public class EntrySelectionScreen extends InBloomScreen {
     }
 
     protected final void initResources() {
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         Image imgFontMed = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_MEDIUM);
 //#         med_font = new BitmapFont(imgFontMed, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_MEDIUM, 0);
         //#elif WVGA

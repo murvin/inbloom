@@ -17,10 +17,10 @@
                  classpathref="classrefcpy" />
 
         <builder basename="GraphicsResources"
-                 source="/Users/mbhantooa/Projects/J2ME/InBloom/src/com/inbloom/utils/"
-                 descriptor="/Users/mbhantooa/Projects/J2ME/InBloom/resources/WVGA/graphics.xml"
-                 destination="/Users/mbhantooa/Projects/J2ME/InBloom/graphics/"
-                 path="/Users/mbhantooa/Projects/J2ME/InBloom/resources/WVGA/"
+                 source="C:/Projects/J2ME/InBloom/src/com/inbloom/utils/"
+                 descriptor="C:/Projects/J2ME/InBloom/resources/WVGA/graphics.xml"
+                 destination="C:/Projects/J2ME/InBloom/graphics/"
+                 path="C:/Projects/J2ME/InBloom/resources/WVGA/"
                   >
                       
                       

@@ -79,13 +79,15 @@ public class TouchEventHandler implements IUiKitPointerHandler {
         }
 
         if (currentDragListener != null) {
-            currentDragListener.onDrag(ITouchEventListener.DRAG_RELEASE, iDragPrevX, iDragPrevY, iDragPrevDeltaX, (iDragPrevDeltaY = iY - iDragPrevY));
+//            currentDragListener.onDrag(ITouchEventListener.DRAG_RELEASE, iDragPrevX, iDragPrevY, iDragPrevDeltaX, (iDragPrevDeltaY = iY - iDragPrevY));
+            currentDragListener.onDrag(ITouchEventListener.DRAG_RELEASE, iDragPrevX, iDragPrevY, iDragPrevDeltaX, iDragPrevDeltaY);
         } else {
             Stack stack = new Stack();
             findTouchListeners(iX, iY, container, stack);
             while (!stack.isEmpty()) {
                 ITouchEventListener listener = (ITouchEventListener) stack.pop();
-                if (listener.onDrag(ITouchEventListener.DRAG_RELEASE, iDragPrevX, iDragPrevY, iDragPrevDeltaX, (iDragPrevDeltaY = iY - iDragPrevY))) {
+                if (listener.onDrag(ITouchEventListener.DRAG_RELEASE, iDragPrevX, iDragPrevY, iDragPrevDeltaX, iDragPrevDeltaY)) {
+//                if (listener.onDrag(ITouchEventListener.DRAG_RELEASE, iDragPrevX, iDragPrevY, iDragPrevDeltaX, (iDragPrevDeltaY = iY - iDragPrevY))) {
                     currentDragListener = listener;
                     break;
                 }

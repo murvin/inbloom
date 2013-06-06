@@ -1,0 +1,24 @@
+<!-- Document Type Definition for the JSR-238 ResourceMaker tool input format -->
+
+<!ELEMENT resources (set+)> <!-- must have at least one set -->
+<!ELEMENT set (resource*)> <!-- a set can be empty, but usually contains resources -->
+<!ELEMENT resource (value+)> <!-- a resource must have at least one value -->
+<!ELEMENT value (#PCDATA)> <!-- a value contains text (empty elements can have a file attribute) -->
+
+<!-- Attributes -->
+<!ATTLIST resources version CDATA #REQUIRED>  <!-- must match the API version -->
+<!ATTLIST set basename CDATA #REQUIRED> <!-- a set always has an associated base name -->
+
+<!-- Must have an ID. Type is either string or binary. Name and comment are optional. --> 
+<!ATTLIST resource 
+          id CDATA #REQUIRED
+          type (string | binary) #REQUIRED
+          name CDATA #IMPLIED
+          comment CDATA #IMPLIED>
+          
+<!-- If locale is not present, defaults to empty. 
+     The file attribute locates binary data if element is empty. -->          
+<!ATTLIST value
+           locale CDATA "" 
+           file CDATA #IMPLIED>
+

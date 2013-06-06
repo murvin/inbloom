@@ -4,7 +4,7 @@ import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
 import com.uikit.motion.MotionLinear;
 import com.uikit.coreElements.Component;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //# import com.inbloom.utils.Utils;
 //# import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
@@ -19,7 +19,7 @@ import javax.microedition.lcdui.Image;
 public class Header extends Component {
 
     private Image imgTitle; 
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#     private BitmapFont 
     //#elif WVGA
 //#     private int fontColour;
@@ -33,13 +33,13 @@ public class Header extends Component {
         super(iWidth, imgBg.getHeight());
         this.imgBg = imgBg;
         
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         this.font = (BitmapFont) font;
         //#elif WVGA
 //#         this.font = (SystemFont) font;
         //#endif 
         
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         this.imgTitle = this.font.drawStringToImage(title);
 //#         int txtColor = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_MENU_TEXT_COLOR));
 //#         this.imgTitle = Utils.replaceColor(imgTitle, txtColor);
@@ -58,7 +58,7 @@ public class Header extends Component {
     }
 
     public void setTitle(String title) {
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         this.imgTitle = font.drawStringToImage(title);
 //#         int txtColor = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_MENU_TEXT_COLOR));
 //#         imgTitle = Utils.replaceColor(imgTitle, txtColor);

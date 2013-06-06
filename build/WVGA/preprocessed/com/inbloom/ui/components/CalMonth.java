@@ -66,7 +66,11 @@ public class CalMonth extends Panel implements IMotionListener, ITouchEventListe
 
         setLayout(new GridLayout(6, 7, cellDimension, cellDimension, UikitConstant.HCENTER | UikitConstant.VCENTER));
 
-        getStyle(true).setPadding(0, padding, 0, padding);
+        int topPadding = 0;
+        //#if ADS
+//#         topPadding += padding;
+        //#endif
+        getStyle(true).setPadding(topPadding, padding, 0, padding);
 
         initComponents(42);
 

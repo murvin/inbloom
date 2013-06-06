@@ -5,13 +5,13 @@ import com.inbloom.ui.components.SettingsDelimiter;
 import com.inbloom.utils.GlobalResources;
 import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
-//#if QVGA || WQVGA
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.inbloom.utils.Utils;
 //#endif 
 
 import com.uikit.animations.UikitImageBox;
 import com.uikit.animations.UikitTextBox;
-//#if QVGA || WQVGA
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -26,7 +26,7 @@ import javax.microedition.lcdui.Image;
 
 public class HelpScreen extends InBloomScreen {
 
-    //#if QVGA || WQVGA
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont
     //#elif WVGA
 //#     private SystemFont
@@ -50,7 +50,7 @@ public class HelpScreen extends InBloomScreen {
     }
 
     private void initResources() {
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFontMed = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_SMALL);
         med_font = new BitmapFont(imgFontMed, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_SMALL, 0);
 
@@ -110,7 +110,7 @@ public class HelpScreen extends InBloomScreen {
     private SettingsDelimiter getTitleItem(String title) {
         int w = getWidth() - (padding * 2);
         int h = large_font.getHeight() * 2;
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         return new SettingsDelimiter(title, w, h, lineColour, large_font);
         //#elif WVGA
 //#         return new SettingsDelimiter(title, w, h, lineColour, large_font, fontColour);

@@ -21,7 +21,7 @@ import com.uikit.utils.UikitConstant;
 import com.uikit.coreElements.Component;
 //#if WVGA 
 //# import com.uikit.coreElements.SystemFont;
-//#elif QVGA || WQVGA || QVGA_ADS
+//#elif QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //# import com.uikit.coreElements.BitmapFont;
 //#endif 
 import com.uikit.coreElements.UikitFont;
@@ -528,7 +528,7 @@ public class Utils {
         button.setStyle(UikitButton.COMP_SELF, UikitButton.STATE_FOCUSED, buttonStyles[1]);
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
         
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         BitmapFont largeFont = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
         //#elif WVGA
 //#         SystemFont largeFont = new SystemFont(Font.FACE_PROPORTIONAL, Font.STYLE_BOLD, Font.SIZE_MEDIUM);
@@ -556,7 +556,7 @@ public class Utils {
     }
 
     public static void applyTextStyles(AlertDialog dialog) {
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
 //#         BitmapFont largeFont = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
         //#elif WVGA
@@ -569,7 +569,7 @@ public class Utils {
 //#         txtStyle.setFontColour(Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CAL_HEADER_TEXT_COLOR)));
         //#endif 
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         Image imgFontDesc = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_MEDIUM);
 //#         BitmapFont descFont = new BitmapFont(imgFontDesc, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_MEDIUM, 0);
         //#elif WVGA

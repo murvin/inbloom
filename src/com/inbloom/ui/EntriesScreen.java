@@ -20,7 +20,7 @@ import com.uikit.painters.PatchPainter;
 import com.uikit.utils.UikitConstant;
 import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.Component;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //# import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -36,7 +36,7 @@ import javax.microedition.lcdui.TextField;
 
 public class EntriesScreen extends InBloomScreen {
 
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#     private BitmapFont 
     //#elif WVGA
 //#     private SystemFont
@@ -73,7 +73,7 @@ public class EntriesScreen extends InBloomScreen {
     }
 
     private void initResources() {
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
 //#         large_font = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
 //# 
@@ -148,7 +148,15 @@ public class EntriesScreen extends InBloomScreen {
     }
 
     private void initComponents() {
-        getStyle(true).setPadding(padding * 2, padding, padding, padding);
+        int botPadding = 
+        //#if QVGA || QVGA_ADS 
+//#         padding;
+        //#elif WVGA || WQVGA || WQVGA_ADS
+//#         padding + Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
+        //#endif 
+        
+        getStyle(true).setPadding(padding * 2, padding, botPadding, padding);
+        
         setLayout(new BoxLayout(UikitConstant.VERTICAL, vgap / 2));
         int w = getWidth() - (padding * 2);
         Image imgSmiley = Resources.getInstance().getThemeImage(GraphicsResources.IMG_ENTRY_SMILE0);
@@ -160,7 +168,7 @@ public class EntriesScreen extends InBloomScreen {
         periodStartsItem.setIsChecked(isPeriodToday);
         addComponent(periodStartsItem);
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_ENTRY_EMOTIONAL), w, large_font.getHeight(), lineColour, large_font));
         //#elif WVGA
 //#         addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_ENTRY_EMOTIONAL), w, large_font.getHeight(), lineColour, large_font, fontColour));
@@ -178,7 +186,7 @@ public class EntriesScreen extends InBloomScreen {
                 Utils.getEntryIcon(Utils.ENTRY_INTIMACY, index),
                 imgArrow, med_font, this, Utils.ENTRY_INTIMACY, new int[]{index}));
 
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || WQVGA_ADS
 //#         addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_ENTRY_PHYSIOLOGICAL), w, large_font.getHeight(), lineColour, large_font));
         //#elif WVGA
 //#         addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_ENTRY_PHYSIOLOGICAL), w, large_font.getHeight(), lineColour, large_font, fontColour));
@@ -261,7 +269,7 @@ public class EntriesScreen extends InBloomScreen {
         item.addBasicTextBox(Utils.getEntryText(Utils.ENTRY_SYMPTOMS, 0));
 
         String notesTitle = Utils.getEntryTitleText(Utils.ENTRY_NOTES);
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || WQVGA_ADS
 //#         addComponent(new SettingsDelimiter(notesTitle, w, large_font.getHeight(), lineColour, large_font));
         //#elif WVGA
 //#         addComponent(new SettingsDelimiter(notesTitle, w, large_font.getHeight(), lineColour, large_font, fontColour));

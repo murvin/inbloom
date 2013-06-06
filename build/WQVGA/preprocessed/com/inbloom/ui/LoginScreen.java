@@ -15,7 +15,7 @@ import com.uikit.animations.UikitButton;
 import com.uikit.mvc.patterns.Screen;
 import com.uikit.coreElements.Component;
 import com.uikit.coreElements.IComponentEventListener;
-//#if QVGA || WQVGA
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -36,7 +36,7 @@ public class LoginScreen extends Screen {
     private UikitTextInput txtInputPassword;
     private UikitButton btnEnter;
     private int padding;
-    //#if QVGA || WQVGA
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont
     //#elif WVGA
 //#     private SystemFont
@@ -61,7 +61,7 @@ public class LoginScreen extends Screen {
         this.imgLogo = Resources.getInstance().getThemeImage(GraphicsResources.IMG_LOGO);
         padding = 5;
         
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
         largeFont = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
         //#elif WVGA
@@ -99,7 +99,7 @@ public class LoginScreen extends Screen {
         }
         
         Utils.applyTextFieldStyles(txtInputPassword, largeFont);
-        //#if WVGA
+        //#if WVGA 
 //#         TextStyle st = new TextStyle(largeFont);
 //#         st.setFontColour(Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CAL_HEADER_TEXT_COLOR)));
 //#         txtInputPassword.setStyle( UikitTextInput.COMP_TEXTBOXTEXT, UikitTextInput.STATE_ENABLED, st);

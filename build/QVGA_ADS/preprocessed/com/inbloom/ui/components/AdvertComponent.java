@@ -1,9 +1,10 @@
 package com.inbloom.ui.components;
 
-//#if QVGA_ADS
+//#if ADS
 import com.inbloom.AdManager;
 import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
+import com.uikit.animations.UikitImageBox;
 import com.uikit.coreElements.IFocusable;
 import com.uikit.coreElements.ITouchEventListener;
 import com.uikit.painters.BgColorPainter;
@@ -16,12 +17,12 @@ import java.util.Hashtable;
 import com.uikit.coreElements.Panel;
 
 public class AdvertComponent extends Panel 
-//#if QVGA_ADS
+//#if ADS
 implements AdManager.IAdListener, IFocusable , ITouchEventListener
 //#endif
 {
     
-//#if QVGA_ADS
+//#if ADS
     private AdManager adManager;
     
     private final String APP_ID = "DestinyTechnologies_inBloom_Nokia"; 
@@ -33,21 +34,31 @@ implements AdManager.IAdListener, IFocusable , ITouchEventListener
     
     private BorderPainter painterBorder;
     
+    private UikitImageBox  imgBoxAdvert;
+    
+    private MIDlet appMIdlet;
+    
+    private String clickUrl = "default click url!";
+    
+    private Image defaultImage;
+    
 //#endif 
 
     public AdvertComponent(int w, int h, MIDlet appMidlet, Hashtable optionalParams) {
         super(w, h);
-        //#if QVGA_ADS
+        //#if ADS
+        this.appMIdlet = appMidlet;
         init(appMidlet, APP_ID, optionalParams);
         //#endif
     }
     
     
-    //#if QVGA_ADS
+    //#if ADS
     private void initResources(){
         colorBg = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_AD_BG_COLOR));
         colorBgHigh = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_AD_BG_COLOR_HIGH));
         colorBorder = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_AD_BORDER_COLOR));
+        defaultImage = Resources.getInstance().getThemeImage(GraphicsResources.IMG_AD_PRO_BANNER);
     }
 
     private void init(MIDlet appMidlet, String appID, Hashtable optionalParams) {
@@ -57,6 +68,9 @@ implements AdManager.IAdListener, IFocusable , ITouchEventListener
         getStyle().addRenderer(painterBorder = new BorderPainter());
         painterBorder.setBorderColor(colorBorder);
         painterBorder.setBorderSize(1);
+        imgBoxAdvert = new UikitImageBox(defaultImage);
+        addComponent(imgBoxAdvert);
+        resetImagePos();
     }
     
     private void focus(boolean isOnFocus){
@@ -71,17 +85,34 @@ implements AdManager.IAdListener, IFocusable , ITouchEventListener
     public void downloadAd() {
         adManager.downloadAd();
     }
+    
+    private void followAd() {
+        if (this.clickUrl != null) {
+            try {
+                this.appMIdlet.platformRequest(this.clickUrl);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    private void resetImagePos (){
+        imgBoxAdvert.x = (iWidth - imgBoxAdvert.getWidth()) / 2;
+        imgBoxAdvert.y = (iHeight - imgBoxAdvert.getHeight()) / 2;
+    }
 
     public void onAdDownloaded(Image image, String clickUrl) {
-        // TODO animate advert change
-        System.out.println("Ad downloaded click Url " + clickUrl);
+        this.clickUrl = clickUrl;
+        imgBoxAdvert.setImage(image);
+        resetImagePos();
     }
 
     public void onAdDownloadError() {
-        System.out.println("Advert not downloaded.");
+        System.out.println("On Advert Download Error.");
     }
 
     public void onAdDownloadStart() {
+        System.out.println("On Advert Download Started.");
     }
 
     // IFocusable methods
@@ -100,6 +131,7 @@ implements AdManager.IAdListener, IFocusable , ITouchEventListener
     public boolean onPress(int type, int x, int y) {
         if (type == ITouchEventListener.SINGLE_PRESS) {
             focus(false);
+            followAd();
             return true;
         }else if (type == ITouchEventListener.TOUCH_DOWN){
             focus(true);

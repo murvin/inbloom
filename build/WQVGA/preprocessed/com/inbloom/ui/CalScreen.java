@@ -2,6 +2,9 @@ package com.inbloom.ui;
 
 import com.inbloom.InBloomController;
 import com.inbloom.model.Settings;
+//#if ADS
+//# import com.inbloom.ui.components.AdvertComponent;
+//#endif
 import com.inbloom.ui.components.CalDay;
 import com.inbloom.ui.components.CalMonth;
 import com.inbloom.ui.components.MapKeys;
@@ -32,6 +35,11 @@ public class CalScreen extends InBloomScreen {
     /** Current day */
     private int day;
     private Image imgHighLight;
+    
+     //#if ADS
+//#     private final int ADVERT_H = 40;
+//#     private AdvertComponent ad;
+    //#endif 
 
     public CalScreen() {
         initResources();
@@ -46,12 +54,21 @@ public class CalScreen extends InBloomScreen {
         year = c.get(Calendar.YEAR);
         currentYear = year;
         day = c.get(Calendar.DAY_OF_MONTH);
+        padding = 4 * UiKitDisplay.getWidth() / 100;
 
         this.imgHighLight = Resources.getInstance().getThemeImage(GraphicsResources.IMG_HIGHLIGHT_PATCH);
     }
 
     private void initComponents() {
-        this.monthSelector = new MonthSelector(iWidth, 9 * UiKitDisplay.getHeight() / 100, true);
+        //#if ADS
+//#         ad = new AdvertComponent(iWidth - (padding * 2), ADVERT_H, InBloomController.myMidlet, null);
+//#         ad.downloadAd();
+//#         addComponent(ad);
+        //#endif
+        
+        int monthSelectorH = 9 * UiKitDisplay.getHeight() / 100;
+        
+        this.monthSelector = new MonthSelector(iWidth, monthSelectorH, true);
         this.monthSelector.setCurrent(mnth, year);
         this.monthSelector.setEventListener(this);
         addComponent(monthSelector);
@@ -62,7 +79,7 @@ public class CalScreen extends InBloomScreen {
         this.month.x = UiKitDisplay.getWidth();
         this.month.enter();
 
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         this.mapKeys = new MapKeys(iWidth, 40);
         //#elif WVGA
 //#         this.mapKeys = new MapKeys(iWidth, 80);
@@ -71,7 +88,11 @@ public class CalScreen extends InBloomScreen {
         addComponent(this.mapKeys);
         updateBottomOffset();
 
-        getStyle(true).setPadding(0, 0, bottomPadding, 0);
+        int topPadding = 0;
+        //#if ADS
+//#         topPadding = padding;
+        //#endif
+        getStyle(true).setPadding(topPadding, 0, bottomPadding, 0);
     }
 
     /**

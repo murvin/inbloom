@@ -59,7 +59,11 @@ public class InBloomScreen extends Screen {
     }
 
     protected void updateBottomOffset() {
+        //#if WQVGA
+//#         int menuBarHeight = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG).getHeight();
+        //#else
         int menuBarHeight = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
+        //#endif
         int tabPanelHeight = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG).getHeight();
 
         bottomPadding = (UiKitDisplay.getHeight() - menuBarHeight - tabPanelHeight) - iHeight;

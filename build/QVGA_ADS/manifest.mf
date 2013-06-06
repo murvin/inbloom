@@ -1,6 +1,7 @@
 MIDlet-1: InBloomMidlet,/icon.png,com.inbloom.InBloomMidlet
+MIDlet-Permissions: javax.microedition.io.Connector.http, javax.microedition.io.Connector.https
 MIDlet-Vendor: Murvin Bhantooa
 MIDlet-Name: inBloom
-MIDlet-Version: 1.1
+MIDlet-Version: 1.4
 MicroEdition-Configuration: CLDC-1.1
-MicroEdition-Profile: MIDP-2.1
+MicroEdition-Profile: MIDP-2.0

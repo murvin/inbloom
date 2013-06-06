@@ -43,11 +43,6 @@ public class BitmapFont extends UikitFont {
                 c++;
             }
         }
-        
-        System.out.println("c is : " + c);
-        System.out.println("chars length : " + chars.length());
-        
-
         if (c != chars.length()) {
             
             throw new IllegalArgumentException();

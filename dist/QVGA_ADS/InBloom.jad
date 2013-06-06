@@ -1,8 +1,9 @@
 MIDlet-1: InBloomMidlet,/icon.png,com.inbloom.InBloomMidlet
-MIDlet-Jar-Size: 524601
+MIDlet-Jar-Size: 389161
 MIDlet-Jar-URL: InBloom.jar
 MIDlet-Name: inBloom
+MIDlet-Permissions: javax.microedition.io.Connector.http, javax.microedition.io.Connector.https
 MIDlet-Vendor: Murvin Bhantooa
-MIDlet-Version: 1.1
+MIDlet-Version: 1.4
 MicroEdition-Configuration: CLDC-1.1
-MicroEdition-Profile: MIDP-2.1
+MicroEdition-Profile: MIDP-2.0

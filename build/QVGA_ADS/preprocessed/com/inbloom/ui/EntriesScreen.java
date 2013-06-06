@@ -148,7 +148,15 @@ public class EntriesScreen extends InBloomScreen {
     }
 
     private void initComponents() {
-        getStyle(true).setPadding(padding * 2, padding, padding, padding);
+        int botPadding = 
+        //#if QVGA || QVGA_ADS
+        padding;
+        //#elif WVGA || WQVGA
+//#         padding + Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
+        //#endif 
+        
+        getStyle(true).setPadding(padding * 2, padding, botPadding, padding);
+        
         setLayout(new BoxLayout(UikitConstant.VERTICAL, vgap / 2));
         int w = getWidth() - (padding * 2);
         Image imgSmiley = Resources.getInstance().getThemeImage(GraphicsResources.IMG_ENTRY_SMILE0);

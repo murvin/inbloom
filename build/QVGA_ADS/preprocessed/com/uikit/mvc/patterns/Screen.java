@@ -29,9 +29,9 @@ public abstract class Screen extends SmartPanel
     }
 
     public abstract void enter();
-
+    
     public abstract void exit();
-
+    
     public abstract void exitToRight();
 
     protected void notifyExitFinished() {

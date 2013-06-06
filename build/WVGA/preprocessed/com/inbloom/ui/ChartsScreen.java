@@ -1,6 +1,10 @@
 package com.inbloom.ui;
 
+import com.inbloom.InBloomController;
 import com.inbloom.model.Coordinates;
+//#if ADS
+//# import com.inbloom.ui.components.AdvertComponent;
+//#endif
 import com.inbloom.ui.components.Chart;
 import com.inbloom.ui.components.ChartKeysPanel;
 import com.inbloom.ui.components.MonthSelector;
@@ -52,6 +56,11 @@ public class ChartsScreen extends InBloomScreen {
     //#if WVGA 
     private int fontColour;
     //#endif
+    
+    //#if ADS
+//#     private final int ADVERT_H = 40;
+//#     private AdvertComponent ad;
+    //#endif 
 
     public ChartsScreen() {
         setIsScrollable(true);
@@ -100,6 +109,13 @@ public class ChartsScreen extends InBloomScreen {
 
     private void initComponents() {
         setLayout(new BoxLayout(UikitConstant.VERTICAL, 0));
+        //#if ADS
+//#         ad = new AdvertComponent(iWidth - (padding * 2), ADVERT_H, InBloomController.myMidlet, null);
+//#         ad.downloadAd();
+//#         addComponent(ad);
+        //#endif
+        
+        
         this.monthSelector = new MonthSelector(iWidth, 9 * UiKitDisplay.getHeight() / 100, false);
         this.monthSelector.setCurrent(mnth, year);
         this.monthSelector.setEventListener(this);
@@ -120,7 +136,11 @@ public class ChartsScreen extends InBloomScreen {
         addComponent(chartKeys);
         updateBottomOffset();
 
-        getStyle(true).setPadding(0, padding, bottomPadding, padding);
+        int topPadding = 0;
+        //#if ADS
+//#         topPadding = padding;
+        //#endif
+        getStyle(true).setPadding(topPadding, padding, bottomPadding, padding);
     }
 
     private void enterChart(boolean isNext) {

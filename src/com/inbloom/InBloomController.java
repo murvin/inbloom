@@ -36,7 +36,7 @@ import com.uikit.coreElements.Component;
 import com.uikit.coreElements.IUikitInputHandler;
 import com.uikit.coreElements.TouchEventHandler;
 import com.uikit.coreElements.UikitCanvas;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //# import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -222,10 +222,10 @@ public class InBloomController extends Controller {
     public void showInputDialog(String title, String message, int entryId) {
         int width = UiKitDisplay.getWidth() * 80 / 100;
         int height = width * 65 / 100;
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_MEDIUM);
 //#         BitmapFont f = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_MEDIUM, 0);
-        //#elif WVGA
+        //#elif WVGA 
 //#         SystemFont f = new SystemFont(Font.FACE_PROPORTIONAL, Font.STYLE_PLAIN, Font.SIZE_MEDIUM);
         //#endif 
 
@@ -280,7 +280,7 @@ public class InBloomController extends Controller {
     }
 
     private void initHeader(String title) {
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         Image imgFontSmall = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
 //#         BitmapFont large_font = new BitmapFont(imgFontSmall, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
         //#elif WVGA

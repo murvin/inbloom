@@ -91,4 +91,5 @@ public final class GraphicsResources {
     public static final int TXT_AD_BG_COLOR = 87;
     public static final int TXT_AD_BG_COLOR_HIGH = 88;
     public static final int TXT_AD_BORDER_COLOR = 89;
+    public static final int IMG_AD_PRO_BANNER = 90;
 }

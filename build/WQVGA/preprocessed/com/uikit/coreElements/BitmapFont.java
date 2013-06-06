@@ -43,8 +43,8 @@ public class BitmapFont extends UikitFont {
                 c++;
             }
         }
-
         if (c != chars.length()) {
+            
             throw new IllegalArgumentException();
         }
 

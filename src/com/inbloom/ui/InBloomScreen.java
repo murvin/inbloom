@@ -59,13 +59,17 @@ public class InBloomScreen extends Screen {
     }
 
     protected void updateBottomOffset() {
+        //#if WQVGA || WQVGA_ADS
+//#         int menuBarHeight = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG).getHeight();
+        //#else
         int menuBarHeight = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
+        //#endif
         int tabPanelHeight = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG).getHeight();
 
         bottomPadding = (UiKitDisplay.getHeight() - menuBarHeight - tabPanelHeight) - iHeight;
         if (bottomPadding < 0) {
 
-            //#if QVGA || WQVGA || QVGA_ADS
+            //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 //#         bottomPadding = padding * 4;
             //#elif WVGA
 //#             bottomPadding = padding + menuBarHeight;

@@ -90,6 +90,8 @@ public class InBloomController extends Controller {
     final int ALERT_DIALOG_NO = 0x403;
     final int INPUT_DIALOG_OK = 0x404;
     final int INPUT_DIALG_CANCEL = 0x405;
+    
+    public static MIDlet myMidlet;
 
     public InBloomController() {
         Settings settings = null;
@@ -135,6 +137,7 @@ public class InBloomController extends Controller {
 
     public void init(MIDlet midlet) {
         super.init(midlet);
+        myMidlet = midlet;
         Settings settings = null;
         try {
             settings = (Settings) Database.getInstance().retrieveISerializable(Database.SETTINGS);

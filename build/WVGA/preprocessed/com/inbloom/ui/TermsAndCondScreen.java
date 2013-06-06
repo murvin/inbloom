@@ -88,9 +88,9 @@ public class TermsAndCondScreen extends InBloomScreen {
 
     private void initComponents() {
         int botPadding = 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || QVGA_ADS
 //#         padding;
-        //#elif WVGA
+        //#elif WVGA || WQVGA
         padding + Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
         //#endif 
         getStyle(true).setPadding(padding * 2, padding, botPadding, padding);

@@ -1,6 +1,10 @@
 package com.inbloom.ui;
 
+import com.inbloom.InBloomController;
 import com.inbloom.model.Coordinates;
+//#if ADS
+//# import com.inbloom.ui.components.AdvertComponent;
+//#endif
 import com.inbloom.ui.components.Chart;
 import com.inbloom.ui.components.ChartKeysPanel;
 import com.inbloom.ui.components.MonthSelector;
@@ -13,7 +17,7 @@ import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.Component;
 import com.uikit.coreElements.ITouchEventListener;
 
-//#if QVGA || WQVGA
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -42,7 +46,7 @@ public class ChartsScreen extends InBloomScreen {
     private int chartLineColour;
     private int chartWeekFillColour;
     
-    //#if QVGA || WQVGA
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont
     //#elif WVGA
 //#     private SystemFont
@@ -52,6 +56,11 @@ public class ChartsScreen extends InBloomScreen {
     //#if WVGA 
 //#     private int fontColour;
     //#endif
+    
+    //#if ADS
+//#     private final int ADVERT_H = 40;
+//#     private AdvertComponent ad;
+    //#endif 
 
     public ChartsScreen() {
         setIsScrollable(true);
@@ -76,7 +85,7 @@ public class ChartsScreen extends InBloomScreen {
         chartLineColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CAL_BORDER_COLOR));
         chartWeekFillColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CHARTK_WEEK_FILL_COLOUR));
 
-        //#if QVGA || WQVGA
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFontSmall = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_SMALL);
         valueFont = new BitmapFont(imgFontSmall, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_SMALL, 0);
         //#elif WVGA
@@ -100,6 +109,13 @@ public class ChartsScreen extends InBloomScreen {
 
     private void initComponents() {
         setLayout(new BoxLayout(UikitConstant.VERTICAL, 0));
+        //#if ADS
+//#         ad = new AdvertComponent(iWidth - (padding * 2), ADVERT_H, InBloomController.myMidlet, null);
+//#         ad.downloadAd();
+//#         addComponent(ad);
+        //#endif
+        
+        
         this.monthSelector = new MonthSelector(iWidth, 9 * UiKitDisplay.getHeight() / 100, false);
         this.monthSelector.setCurrent(mnth, year);
         this.monthSelector.setEventListener(this);
@@ -114,13 +130,17 @@ public class ChartsScreen extends InBloomScreen {
 
 
         chartKeys = new ChartKeysPanel(iWidth, 30);
-        //#if WVGA
+        //#if WVGA 
 //#         chartKeys.expandToFitContent();
         //#endif 
         addComponent(chartKeys);
         updateBottomOffset();
 
-        getStyle(true).setPadding(0, padding, bottomPadding, padding);
+        int topPadding = 0;
+        //#if ADS
+//#         topPadding = padding;
+        //#endif
+        getStyle(true).setPadding(topPadding, padding, bottomPadding, padding);
     }
 
     private void enterChart(boolean isNext) {

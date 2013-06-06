@@ -41,7 +41,11 @@ public class MenuBar extends Panel implements IUikitInputHandler {
     }
     
     public void updateBg(){
+        //#if WQVGA
+//#         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG);
+        //#else
         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR);
+        //#endif
         getStyle().clearAllRenderers();
         getStyle().addRenderer(new PatchPainter(bg, 0, 5, 0, 5));
     }
@@ -79,7 +83,11 @@ public class MenuBar extends Panel implements IUikitInputHandler {
     }
 
     private void initResources() {
+                //#if WQVGA
+//#         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG);
+        //#else
         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR);
+        //#endif
         this.softKeyPadding = 3 * UiKitDisplay.getWidth() / 100;
         this.offset = 1 * UiKitDisplay.getWidth() / 100;
     }

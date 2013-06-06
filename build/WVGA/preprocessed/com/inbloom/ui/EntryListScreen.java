@@ -1,12 +1,16 @@
 package com.inbloom.ui;
 
+//#if ADS
+//# import InneractiveSDK.IADView.IaOptionalParams;
+//# import java.util.Hashtable;
+//# import com.inbloom.ui.components.AdvertComponent;
+//#endif 
 import com.inbloom.InBloomController;
 import com.inbloom.model.Date;
 import com.inbloom.model.Entries;
 import com.inbloom.model.Entry;
 import com.inbloom.model.Settings;
 import com.inbloom.model.User;
-import com.inbloom.ui.components.AdvertComponent;
 import com.inbloom.ui.components.EntryItem;
 import com.inbloom.ui.components.SettingsDelimiter;
 import com.inbloom.utils.Database;
@@ -29,6 +33,7 @@ import com.uikit.painters.PatchPainter;
 import com.uikit.styles.ComponentStyle;
 import com.uikit.styles.TextStyle;
 
+
 import java.util.Vector;
 import javax.microedition.lcdui.Font;
 import javax.microedition.lcdui.Image;
@@ -41,10 +46,9 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     //#if QVGA || WQVGA || QVGA_ADS
 //#     private BitmapFont 
     //#elif WVGA
-    private SystemFont
-    //#endif 
-    med_font, large_font;
-            
+                private SystemFont
+            //#endif 
+            med_font, large_font;
     private PatchPainter onFocusHighLight;
     private int g, h;
     private int lineColour;
@@ -54,10 +58,11 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     //#if WVGA
     private int fontColour;
     //#endif
-    
-    //#if QVGA_ADS
+    //#if ADS
+//#     private final int ADVERT_ID = 0x004;
+//#     private final int ADVERT_H = 40;
 //#     private AdvertComponent ad;
-    //#endif
+    //#endif 
 
     public EntryListScreen() {
         initResources();
@@ -105,17 +110,12 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
         h = imgSmiley.getHeight() + (g * 2);
 
         lineColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_THEME_MAIN_COLOR));
-        
-         //#if QVGA_ADS
-//#         ad = new AdvertComponent(iWidth, 40, controller.getMIDlet(), null);
-        //#endif 
 
     }
 
     private void addElementsToList(Entries entries) {
-      
-        adapterList.addElement(entries.getDate());
 
+        adapterList.addElement(entries.getDate());
 
         if (entries.getMoodEntry() != null) {
             entries.getMoodEntry().setDate(entries.getDate());
@@ -181,22 +181,29 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     private void initComponents() {
         if (entriesList != null) {
             adapterList = new Vector();
-             //#if QVGA_ADS
-//#             adapterList.addElement(ad);
+            //#if ADS
+//#             adapterList.addElement(new Integer(ADVERT_ID));
             //#endif 
-            
+
             for (int i = 0; i < entriesList.size(); i++) {
                 Entries entries = (Entries) entriesList.elementAt(i);
                 addElementsToList(entries);
             }
             setAdapter(this);
         } else {
+            setLayout(null);
+            int menuBarHeight = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
+            int tabPanelHeight = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG).getHeight();
+            setSize(iWidth, iHeight - menuBarHeight - tabPanelHeight);
             addComponent(getTxtBox(Resources.getInstance().getText(GlobalResources.TXT_ALERT_NOENTRIES_ADDED)));
         }
-        
-        updateBottomOffset();
-        getStyle(true).setPadding(0, padding, bottomPadding, padding);
 
+        updateBottomOffset();
+        int topPadding = 0;
+        //#if ADS
+//#         topPadding = padding;
+        //#endif
+        getStyle(true).setPadding(topPadding, padding, bottomPadding, padding);
     }
 
     private String getDate(Date date) {
@@ -287,6 +294,12 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
             return getSymptoms((Date) v.elementAt(0), (int[]) v.elementAt(1));
         } else if (listItem instanceof String) {
             return getTxtBox((String) listItem);
+        } else if (listItem instanceof Integer) {
+            //#if ADS
+//#             ad = new AdvertComponent(iWidth - (padding * 2), ADVERT_H, InBloomController.myMidlet, null);
+//#             ad.downloadAd();
+//#             return ad;
+            //#endif 
         }
 
         return null;

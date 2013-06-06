@@ -17,10 +17,10 @@
                  classpathref="classrefcpy" />
 
         <builder basename="GlobalResources"
-                 source="/Users/mbhantooa/Projects/J2ME/InBloom/src/com/inbloom/utils/"
-                 descriptor="/Users/mbhantooa/Projects/J2ME/InBloom/resources/resources.xml"
-                 destination="/Users/mbhantooa/Projects/J2ME/InBloom/res/"
-                 path="/Users/mbhantooa/Projects/J2ME/InBloom/resources/" 
+                 source="C:/Projects/J2ME/InBloom/src/com/inbloom/utils/"
+                 descriptor="C:/Projects/J2ME/InBloom/resources/resources.xml"
+                 destination="C:/Projects/J2ME/InBloom/res/"
+                 path="C:/Projects/J2ME/InBloom/resources/" 
                   >
                    
         <locale name="common"/>

@@ -1,5 +1,5 @@
 MIDlet-1: InBloomMidlet,/icon.png,com.inbloom.InBloomMidlet
-MIDlet-Jar-Size: 389161
+MIDlet-Jar-Size: 389174
 MIDlet-Jar-URL: InBloom.jar
 MIDlet-Name: inBloom
 MIDlet-Permissions: javax.microedition.io.Connector.http, javax.microedition.io.Connector.https

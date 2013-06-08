@@ -12,7 +12,7 @@ import com.uikit.coreElements.Component;
 import com.uikit.coreElements.SmartPanel;
 import com.uikit.coreElements.IComponentEventListener;
 import com.uikit.coreElements.Panel;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -106,7 +106,7 @@ public class MonthSelector extends SmartPanel implements IComponentEventListener
         
         fontColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CAL_HEADER_TEXT_COLOR));
         
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
         BitmapFont font = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_BOLD, Font.SIZE_LARGE, 0);
         //#elif WVGA
@@ -133,7 +133,7 @@ public class MonthSelector extends SmartPanel implements IComponentEventListener
             pnlDays.setLayout(new BoxLayout(UikitConstant.HORIZONTAL, 0));
             TextStyle daysStyle = new TextStyle();
             daysStyle.setAlign(UikitConstant.HCENTER);
-            //#if QVGA || WQVGA || QVGA_ADS
+            //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
             Image imgFontSmall = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_SMALL);
             BitmapFont fontSmall = new BitmapFont(imgFontSmall, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_SMALL, 0);
             //#elif WVGA

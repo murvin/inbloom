@@ -4,14 +4,14 @@ import com.inbloom.utils.GlobalResources;
 import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
 
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.inbloom.utils.Utils;
 //#endif 
 import com.uikit.utils.UikitConstant;
 import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.Component;
 import com.uikit.coreElements.Panel;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -21,7 +21,7 @@ import com.uikit.layout.GridLayout;
 
 import javax.microedition.lcdui.Font;
 import javax.microedition.lcdui.Graphics;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import javax.microedition.lcdui.Image;
 //#endif 
 public class MapKeys extends Panel {
@@ -45,7 +45,7 @@ public class MapKeys extends Panel {
 
     private void initResources() {
         
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_SMALL);
         font = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_SMALL, 0);
         //#elif WVGA

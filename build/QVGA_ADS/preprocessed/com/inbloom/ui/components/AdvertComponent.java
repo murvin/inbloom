@@ -38,7 +38,7 @@ implements AdManager.IAdListener, IFocusable , ITouchEventListener
     
     private MIDlet appMIdlet;
     
-    private String clickUrl = "default click url!";
+    private String clickUrl = "http://store.ovi.com/content/370623";
     
     private Image defaultImage;
     

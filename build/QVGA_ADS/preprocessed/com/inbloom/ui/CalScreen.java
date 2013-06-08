@@ -79,7 +79,7 @@ public class CalScreen extends InBloomScreen {
         this.month.x = UiKitDisplay.getWidth();
         this.month.enter();
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         this.mapKeys = new MapKeys(iWidth, 40);
         //#elif WVGA
 //#         this.mapKeys = new MapKeys(iWidth, 80);

@@ -17,7 +17,7 @@ import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.Component;
 import com.uikit.coreElements.ITouchEventListener;
 
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -46,7 +46,7 @@ public class ChartsScreen extends InBloomScreen {
     private int chartLineColour;
     private int chartWeekFillColour;
     
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont
     //#elif WVGA
 //#     private SystemFont
@@ -85,7 +85,7 @@ public class ChartsScreen extends InBloomScreen {
         chartLineColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CAL_BORDER_COLOR));
         chartWeekFillColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CHARTK_WEEK_FILL_COLOUR));
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFontSmall = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_SMALL);
         valueFont = new BitmapFont(imgFontSmall, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_SMALL, 0);
         //#elif WVGA

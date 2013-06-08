@@ -16,7 +16,7 @@ import com.uikit.utils.UikitConstant;
 import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.Component;
 import com.uikit.coreElements.Panel;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -31,7 +31,7 @@ import javax.microedition.lcdui.TextField;
 public class SettingsScreen extends InBloomScreen {
 
     private Settings settings;
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont
     //#elif WVGA
 //#     private SystemFont
@@ -48,7 +48,7 @@ public class SettingsScreen extends InBloomScreen {
     private SettingsCycleEntry entryProfileName, entryProfilePassword;
     private EntryItem entryLanguage, entryTheme, entryTerms;
     private PatchPainter patchPainter;
-    //#if WVGA
+    //#if WVGA 
 //#     private int fontColour;
     //#endif
 
@@ -67,7 +67,7 @@ public class SettingsScreen extends InBloomScreen {
         imgOnTextInputFocus = Resources.getInstance().getThemeImage(GraphicsResources.IMG_HIGHLIGHT_PATCH_ROUNDCORNER);
         imgTextInputEnabled = Resources.getInstance().getThemeImage(GraphicsResources.IMG_TEXTINPUT_PATCH);
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
         large_font = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
 
@@ -86,7 +86,7 @@ public class SettingsScreen extends InBloomScreen {
         lineColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_THEME_MAIN_COLOR));
         padding = 4 * UiKitDisplay.getWidth() / 100;
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         vgap = 2 * UiKitDisplay.getHeight() / 100;
         //#elif WVGA
 //#         vgap = 1 * UiKitDisplay.getHeight() / 100;
@@ -114,7 +114,7 @@ public class SettingsScreen extends InBloomScreen {
         int botPadding = 
         //#if QVGA || QVGA_ADS
         padding;
-        //#elif WVGA || WQVGA
+        //#elif WVGA || WQVGA || WQVGA_ADS
 //#         padding + Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
         //#endif 
         
@@ -122,7 +122,7 @@ public class SettingsScreen extends InBloomScreen {
         setLayout(new BoxLayout(UikitConstant.VERTICAL, vgap * 2));
 
         Panel cycle = getSettingsPanel();
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         cycle.addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_SETTINGS_CYCLE), cycle.getWidth(), large_font.getHeight(), lineColour, large_font));
         //#elif WVGA
 //#         cycle.addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_SETTINGS_CYCLE), cycle.getWidth(), large_font.getHeight(), lineColour, large_font, fontColour));
@@ -149,7 +149,7 @@ public class SettingsScreen extends InBloomScreen {
         int w = iWidth - (padding * 2);
 
         Panel units = getSettingsPanel();
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         units.addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_SETTINGS_UNITS), units.getWidth(), large_font.getHeight(), lineColour, large_font));
         //#elif WVGA
 //#         units.addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_SETTINGS_UNITS), units.getWidth(), large_font.getHeight(), lineColour, large_font, fontColour));
@@ -181,7 +181,7 @@ public class SettingsScreen extends InBloomScreen {
         addComponent(units);
 
         Panel personal = getSettingsPanel();
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         personal.addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_SETTINGS_PERSONAL), personal.getWidth(), large_font.getHeight(), lineColour, large_font));
         //#elif WVGA
 //#         personal.addComponent(new SettingsDelimiter(Resources.getInstance().getText(GlobalResources.TXT_SETTINGS_PERSONAL), personal.getWidth(), large_font.getHeight(), lineColour, large_font, fontColour));

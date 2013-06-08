@@ -3,7 +3,7 @@ package com.inbloom.ui.components;
 import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
 
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.inbloom.utils.Utils;
 //#endif 
 import com.uikit.motion.IMotionListener;
@@ -15,7 +15,7 @@ import com.uikit.coreElements.UiKitDisplay;
 import com.uikit.coreElements.IComponentEventListener;
 import com.uikit.coreElements.ITouchEventListener;
 import com.uikit.coreElements.Panel;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -79,7 +79,7 @@ public class CalMonth extends Panel implements IMotionListener, ITouchEventListe
     private void initResources() {
         this.calBorderColour = Integer.parseInt(Resources.getInstance().getThemeStr(GraphicsResources.TXT_CAL_BORDER_COLOR));
        
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_SMALL);
         font = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_SMALL, 0);
         //#elif WVGA

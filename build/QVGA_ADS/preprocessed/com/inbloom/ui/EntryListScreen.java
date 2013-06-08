@@ -1,8 +1,6 @@
 package com.inbloom.ui;
 
 //#if ADS
-import InneractiveSDK.IADView.IaOptionalParams;
-import java.util.Hashtable;
 import com.inbloom.ui.components.AdvertComponent;
 //#endif 
 import com.inbloom.InBloomController;
@@ -21,7 +19,7 @@ import com.inbloom.utils.Utils;
 
 
 import com.uikit.animations.UikitTextBox;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -43,7 +41,7 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
     private Vector entriesList;
     private Vector adapterList;
     private Image imgArrow;
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont 
     //#elif WVGA
 //#                 private SystemFont
@@ -88,7 +86,7 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
         }
 
         imgArrow = Resources.getInstance().getThemeImage(GraphicsResources.IMG_ENTRY_ARROW);
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFontMed = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_MEDIUM);
         med_font = new BitmapFont(imgFontMed, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_MEDIUM, 0);
 
@@ -258,7 +256,7 @@ public class EntryListScreen extends InBloomScreen implements IAdapter {
 
     private SettingsDelimiter getDateItem(Date date) {
         int w = getWidth() - (padding * 2);
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         return new SettingsDelimiter(getDate(date), w, h - 5, lineColour, large_font);
         //#elif WVGA
 //#         return new SettingsDelimiter(getDate(date), w, h - 5, lineColour, large_font, fontColour);

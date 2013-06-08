@@ -41,7 +41,7 @@ public class MenuBar extends Panel implements IUikitInputHandler {
     }
     
     public void updateBg(){
-        //#if WQVGA
+        //#if WQVGA || WQVGA_ADS
 //#         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG);
         //#else
         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR);
@@ -83,7 +83,7 @@ public class MenuBar extends Panel implements IUikitInputHandler {
     }
 
     private void initResources() {
-                //#if WQVGA
+                //#if WQVGA || WQVGA_ADS
 //#         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.TAB_BG);
         //#else
         this.bg = Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR);

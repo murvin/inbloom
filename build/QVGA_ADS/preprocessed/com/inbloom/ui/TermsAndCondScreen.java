@@ -5,14 +5,14 @@ import com.inbloom.ui.components.SettingsDelimiter;
 import com.inbloom.utils.GlobalResources;
 import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.inbloom.utils.Utils;
 //#endif
 
 import com.uikit.animations.UikitTextBox;
 import com.uikit.utils.UikitConstant;
 import com.uikit.coreElements.UiKitDisplay;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#elif WVGA
 //# import com.uikit.coreElements.SystemFont;
@@ -22,7 +22,7 @@ import com.uikit.layout.BoxLayout;
 import com.uikit.styles.TextStyle;
 
 import javax.microedition.lcdui.Font;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import javax.microedition.lcdui.Image;
 //#endif 
 
@@ -30,7 +30,7 @@ public class TermsAndCondScreen extends InBloomScreen {
 
     private String[] titles;
     private String[] description;
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont 
     //#elif WVGA
 //#     private SystemFont
@@ -62,7 +62,7 @@ public class TermsAndCondScreen extends InBloomScreen {
             Resources.getInstance().getText(GlobalResources.TXT_TERMS_DESC_4)
         };
 
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
         largeFont = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
 
@@ -90,7 +90,7 @@ public class TermsAndCondScreen extends InBloomScreen {
         int botPadding = 
         //#if QVGA || QVGA_ADS
         padding;
-        //#elif WVGA || WQVGA
+        //#elif WVGA || WQVGA || WQVGA_ADS
 //#         padding + Resources.getInstance().getThemeImage(GraphicsResources.MENU_BAR).getHeight();
         //#endif 
         getStyle(true).setPadding(padding * 2, padding, botPadding, padding);
@@ -103,7 +103,7 @@ public class TermsAndCondScreen extends InBloomScreen {
         }
 
         for (int i = 0; i < titles.length; i++) {
-            //#if QVGA || WQVGA || QVGA_ADS
+            //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
             addComponent(new SettingsDelimiter(titles[i], w, largeFont.getHeight(), lineColour, largeFont));
             //#elif WVGA
 //#             addComponent(new SettingsDelimiter(titles[i], w, largeFont.getHeight(), lineColour, largeFont, fontColour));

@@ -3,12 +3,12 @@ package com.inbloom.ui;
 import com.inbloom.utils.GlobalResources;
 import com.inbloom.utils.GraphicsResources;
 import com.inbloom.utils.Resources;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.inbloom.utils.Utils;
 //#endif
 
 import com.uikit.animations.UikitImageBox;
-//#if QVGA || WQVGA || QVGA_ADS
+//#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
 import com.uikit.coreElements.BitmapFont;
 //#endif
 //#if WVGA
@@ -28,7 +28,7 @@ public class AboutScreen extends InBloomScreen {
     private Image imgVersionNameTitle, imgVersionName;
     private Image imgDeveloperNameTitle, imgDeveloperName;
     private Image imgDedicatedNameTitle, imgDedicatedTitle;
-    //#if QVGA || WQVGA || QVGA_ADS
+    //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
     private BitmapFont 
     //#elif WVGA
 //#     private SystemFont 
@@ -47,7 +47,7 @@ public class AboutScreen extends InBloomScreen {
     }
 
     private void initResources() {
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         Image imgFont = Resources.getInstance().getThemeImage(GraphicsResources.FONT_THEME_LARGE);
         fontTitle = new BitmapFont(imgFont, Utils.FONT_CHARS, Font.STYLE_PLAIN, Font.SIZE_LARGE, 0);
 
@@ -70,7 +70,7 @@ public class AboutScreen extends InBloomScreen {
         String title = Resources.getInstance().getText(GlobalResources.TXT_ABOUT_APP_NAME);
         imgAppNameTitle = fontTitle.drawStringToImage(title, colourTitle);
         title = UiKitDisplay.midlet.getAppProperty("MIDlet-Name");
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         imgAppName = fontDesc.drawStringToImage(title);
         //#elif WVGA
 //#             imgAppName = fontDesc.drawStringToImage(title, fontColour);
@@ -79,7 +79,7 @@ public class AboutScreen extends InBloomScreen {
         title = Resources.getInstance().getText(GlobalResources.TXT_ABOUT_VERSION);
         imgVersionNameTitle = fontTitle.drawStringToImage(title, colourTitle);
         title = UiKitDisplay.midlet.getAppProperty("MIDlet-Version");
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         imgVersionName = fontDesc.drawStringToImage(title);
         //#elif WVGA
 //#         imgVersionName = fontDesc.drawStringToImage(title, fontColour);
@@ -88,7 +88,7 @@ public class AboutScreen extends InBloomScreen {
         title = Resources.getInstance().getText(GlobalResources.TXT_ABOUT_DEVELOPER);
         imgDeveloperNameTitle = fontTitle.drawStringToImage(title, colourTitle);
         title = UiKitDisplay.midlet.getAppProperty("MIDlet-Vendor");
-        //#if QVGA || WQVGA  || QVGA_ADS
+        //#if QVGA || WQVGA  || QVGA_ADS || WQVGA_ADS
         imgDeveloperName = fontDesc.drawStringToImage(title);
         //#elif WVGA
 //#         imgDeveloperName = fontDesc.drawStringToImage(title, fontColour);
@@ -97,7 +97,7 @@ public class AboutScreen extends InBloomScreen {
         title = Resources.getInstance().getText(GlobalResources.TXT_ABOUT_DEDICATED_TITLE);
         imgDedicatedNameTitle = fontTitle.drawStringToImage(title, colourTitle);
         title = Resources.getInstance().getText(GlobalResources.TXT_ABOUT_DEDICATED_TEXT);
-        //#if QVGA || WQVGA || QVGA_ADS
+        //#if QVGA || WQVGA || QVGA_ADS || WQVGA_ADS
         imgDedicatedTitle = fontDesc.drawStringToImage(title);
         //#elif WVGA
 //#         imgDedicatedTitle = fontDesc.drawStringToImage(title, fontColour);
